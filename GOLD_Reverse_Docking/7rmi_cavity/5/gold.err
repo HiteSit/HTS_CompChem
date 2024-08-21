@@ -1,0 +1,15 @@
+Warning message: 
+set_pdb_bond_to_double: can't find bond between 3635 and 3637
+
+Warning message: 
+atom no  493 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmi_cavity/7rmi_cavity_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 1176 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmi_cavity/7rmi_cavity_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 3636 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmi_cavity/7rmi_cavity_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+

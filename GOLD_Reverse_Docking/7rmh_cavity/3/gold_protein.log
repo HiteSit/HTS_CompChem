@@ -1,0 +1,412 @@
+
+--------------------------------------------------------------------------------
+--- GOLD DOCKING RUN  (GOLD v2022.3.0)                                       ---
+--------------------------------------------------------------------------------
+
+GOLD is Genetic Optimisation for Ligand Docking.
+
+GOLD is the result of a collaborative project between Sheffield University,
+the CCDC and Glaxo Wellcome. GOLD is a proprietary product for which the
+copyright is held by the Cambridge Crystallographic Data Centre (CCDC)
+
+Please forward any comments, bugs, or queries to CCDC Software Support:
+
+  Cambridge Crystallographic Data Centre
+  12 Union Road
+  Cambridge CB2 1EZ
+  tel: (44) (1223) 336022
+  email: support@ccdc.cam.ac.uk
+
+--------------------------------------------------------------------------------
+
+  User                                     : hitesit
+  Invocation Time                          : Sun Apr 16 23:04:43 2023
+
+
+--------------------------------------------------------------------------------
+--- Parameter setting overview (user-defined or automatic)                   ---
+--------------------------------------------------------------------------------
+  maxops                          automatic setting
+  popsiz                          automatic setting
+  select_pressure                 automatic setting
+  n_islands                       automatic setting
+  niche_siz                       automatic setting
+  pt_crosswt                      automatic setting
+  allele_mutatewt                 automatic setting
+  migratewt                       automatic setting
+  start_vdw_linear_cutoff         defined by user
+  initial_virtual_pt_match_max    defined by user
+
+--------------------------------------------------------------------------------
+--- ChemScore parameters                                                     ---
+--------------------------------------------------------------------------------
+
+* ChemScore coefficients                                                        
+  ZERO_COEFFICIENT                         :  -5.480
+  HBOND_COEFFICIENT                        :  -3.000
+  INTERNAL_HBOND_COEFFICIENT               :  -3.340
+  METAL_COEFFICIENT                        :  -6.000
+  LIPO_COEFFICIENT                         :  -0.117
+  ROT_COEFFICIENT                          :   2.560
+  INTRA_COEFFICIENT                        :   1.000
+  LINK_BEND_COEFFICIENT                    :   0.250
+  PROTEIN_ENERGY_COEFFICIENT               :   1.000
+  CHARGED_HBOND_SCALING                    :   2.000
+  CHARGED_METAL_SCALING                    :   2.000
+
+* Hydrogen-bond term                                                            
+  HBOND_FUNCTION                           : CHEMSCORE_DOCKING
+  R_IDEAL                                  :   1.850
+  DELTA_R_IDEAL                            :   0.250
+  DELTA_R_MAX                              :   0.650
+  HBOND_R_SIGMA                            :   0.000
+  ALPHA_IDEAL                              : 180.000
+  DELTA_ALPHA_IDEAL                        :  30.000
+  DELTA_ALPHA_MAX                          :  80.000
+  HBOND_ALPHA_SIGMA                        :   0.000
+  BETA_IDEAL                               : 180.000
+  DELTA_BETA_IDEAL                         :  80.000
+  DELTA_BETA_MAX                           : 100.000
+  HBOND_BETA_SIGMA                         :   0.000
+USE_HBOND_STRENGTHS = OFF
+
+  CH...O term                              : SPECIAL
+  CHO_COEFFICIENT       (kJ/mol)           :  -3.000
+  CHO_CLASH_RADIUS      (Angstrom)         :   2.400
+  CHO_R_IDEAL           (Angstrom)         :   2.350
+  CHO_DELTA_R_IDEAL     (Angstrom)         :   0.250
+  CHO_DELTA_R_MAX       (Angstrom)         :   0.650
+  CHO_ALPHA_IDEAL       (degrees)          : 180.000
+  CHO_DELTA_ALPHA_IDEAL (degrees)          :  50.000
+  CHO_DELTA_ALPHA_MAX   (degrees)          : 100.000
+  CHO_BETA_IDEAL        (degrees)          : 180.000
+  CHO_DELTA_BETA_IDEAL  (degrees)          :  80.000
+  CHO_DELTA_BETA_MAX    (degrees)          : 100.000
+
+Sulfur...acceptor term: 
+
+
+* Metal term                                                                    
+  METAL_R1                                 :   2.600
+  METAL_R2                                 :   3.000
+  METAL_R_SIGMA                            :   0.100
+
+* Specific metal-coordination types                                             
+
+
+* Lipophilic term                                                               
+  MAKE_PLANAR_N_LIPO                       :      0
+  LIPO_R1                                  :   4.100
+  LIPO_R2                                  :   7.100
+  LIPO_R_SIGMA                             :   0.100
+
+
+* Clash term                                                                    
+  CLASH_FUNCTION                           : CHEMSCORE_DOCKING
+  CLASH_RADIUS_GENERAL                     :   3.100
+  CLASH_RADIUS_SULPHUR                     :   3.350
+  CLASH_RADIUS_HBOND                       :   1.600
+  CLASH_RADIUS_METAL                       :   1.380
+  CLASH_RADIUS_SIGMA                       :   0.000
+
+
+* Torsion term                                                                  
+  SP3_SP3_BOND         A =  0.18750 (kJ/mol); n = 3.0; f0 =  3.14159 (rad)
+  SP3_SP2_BOND         A =  0.09375 (kJ/mol); n = 6.0; f0 =  0.00000 (rad)
+  SP2_SP2_BOND         A =  0.18750 (kJ/mol); n = 2.0; f0 =  0.00000 (rad)
+  UNKNOWN_BOND         A =  0.00000 (kJ/mol); n = 0.0; f0 =  0.00000 (rad)
+  EXOCYCLIC_BOND       A =  0.50000 (kJ/mol); n = 1.0; f0 =  3.14159 (rad)
+USE_EXOCYCLIC_TORSION_TERM = 1
+
+
+* Scaling                                                                       
+  HBOND_SCALING                            :      0
+  HBOND_SCALING_SAMPLES                    :      1
+  HBOND_SCALING_END                        :  75.000
+  DELTA_R_MAX_START                        :   1.150
+  DELTA_ALPHA_MAX_START (deg)              : 110.000
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- CHEMPLP parameters                                                       ---
+--------------------------------------------------------------------------------
+
+  PLP_COEFFICIENT                          :   1.000
+  PLP_LIGAND_CLASH_COEFFICIENT             :   1.000
+  PLP_LIGAND_TORSION_COEFFICIENT           :   2.000
+  PLP_PROTEIN_ENERGY_COEFFICIENT           :   1.000
+  PLP_CONSTRAINT_COEFFICIENT               :   1.000
+  PLP_GRID_SPACING                         :   0.300
+
+  PLP_LIGAND_TORSION_FUNCTION              : CHEMSCORE
+  PLP_LIGAND_CLASH_FUNCTION                : PLP
+  PLP_HBOND_METAL_FUNCTION                 : CHEMSCORE
+
+  PLP_WATER_BARRIER                        :   3.000
+
+  HBOND_A                                  :   2.300
+  HBOND_B                                  :   2.600
+  HBOND_C                                  :   3.100
+  HBOND_D                                  :   3.400
+  HBOND_E                                  :  -1.000
+  HBOND_F                                  :  20.000
+
+  BURIED_A                                 :   3.400
+  BURIED_B                                 :   3.600
+  BURIED_C                                 :   4.500
+  BURIED_D                                 :   5.500
+  BURIED_E                                 :  -0.100
+  BURIED_F                                 :  20.000
+
+  METAL_A                                  :   1.400
+  METAL_B                                  :   2.200
+  METAL_C                                  :   2.600
+  METAL_D                                  :   2.800
+  METAL_E                                  :  -1.000
+  METAL_F                                  :  20.000
+
+  NONPOLAR_A                               :   3.400
+  NONPOLAR_B                               :   3.600
+  NONPOLAR_C                               :   4.500
+  NONPOLAR_D                               :   5.500
+  NONPOLAR_E                               :  -0.400
+  NONPOLAR_F                               :  20.000
+
+  REPULSIVE_A                              :   3.200
+  REPULSIVE_B                              :   5.000
+  REPULSIVE_C                              :   0.100
+  REPULSIVE_D                              :  20.000
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Parameter settings                                                       ---
+--------------------------------------------------------------------------------
+
+* Population settings                                                           
+  maxops                                   : auto   
+  popsiz                                   : auto   
+  select_pressure                          : auto   
+  n_islands                                : auto   
+  niche_siz                                : auto   
+
+* GA settings                                                                   
+  pt_crosswt                               : auto   
+  allele_mutatewt                          : auto   
+  migratewt                                : auto   
+
+* Search settings                                                               
+  start_vdw_linear_cutoff                  :   6.000
+  initial_virtual_pt_match_max             :   3.000
+
+* Cavity detection                                                              
+  Cavity detection algorithm               : Ligsite
+
+* Solvent Accessibility                                                         
+  Solvate all H bond donors and acceptors  : on
+
+* Ligand treatment                                                              
+  Internal ligand hydrogen bonds           : ignored
+  Flexible ligand ring corners             : fixed
+  Ligand carboxylic OH groups              : flip
+  Ligand amide bonds                       : fixed
+  Ligand pyramidal nitrogen groups         : fixed
+  Ligand bond to planar nitrogen groups    : allow 180 degrees flip
+  Ligand planar nitrogen bonds (Ring-NH-R) : can flip
+  Ligand planar nitrogen bonds (Ring-NRR') : can flip
+  Flatten amide and trigonal nitrogens     : yes
+  Torsional distributions                  : are used
+  Calculating torsional energy of ligand   : yes
+  Ligand energy                            : relative wrt best tors+vdw+hbond
+                                           : reported fitness is adjusted
+  Post-process ligand bonds                : yes
+
+* Protein treatment:                                                            
+  Protein carboxylic OH groups             : flip
+
+* Algorithm Settings (from parameter file):                                     
+  VDW potential (external)                 : 4-8       LJ potential (no. 1)
+  VDW potential (external)                 : 4-8 2-4 split potential (no. 2)
+  VDW potential (external)                 : 4-8 1-2 split potential (no. 3)
+  VDW potential (internal)                 : 6-12       LJ potential (no. 1)
+  VDW potential (internal)                 : 4-8       LJ potential (no. 2)
+  VDW potential (internal)                 : slot 3 not used
+  Weighting for distance matching          : squared
+  Weighting for angle    matching          : squared
+  Mapping, second pass results             : taking best three
+  Internal energy                          : on absolute scale
+  External energy weight                   :   1.375
+  Internal energy weight                   :   1.000
+  Length of H bond                         :   2.900
+  Angle coding                             : binary coded
+  Angle bit length                         : 8 bits
+  Allow duplicates in chromosome mappings  : yes
+  Parameter scaling                        : on
+  Simplex minimisation after every GA run  : yes
+  Infer hetatm types from residue names    : yes
+  Ligand relaxation                        : on
+    Maximum relax distance                 :   2.000
+    Maximum relax angle                    :  60.000
+  Ionisation dispersion term               : external
+
+* Geometric parameters for Fitness Function (from parameter file)               
+  Initial Virtual pt dist max              :   3.000
+  Final Virtual pt dist max                :   2.000
+  Virtual point distance min               :   0.500
+  Virtual point angle min                  :  60.000
+  Virtual point angle max                  : 160.000
+  Cone virtual point angle min             : 120.000
+  Cone virtual point angle max             : 160.000
+  Contact distance                         :  10.000
+  D/A vdw contact weighting                :   1.000
+  Minimum neighbour weighting              :   0.200
+  Mapping second pass distance             :   2.000
+
+* Lone pair parameters                                                          
+  Planar LP: minimum angle with plane      :  20.000
+  Planar LP: maximum angle with plane      :  90.000
+  Protein planar acceptors                 : need only one lp solvated
+  Solvated point distance                  :  -0.200
+
+* VDW parameters                                                                
+  Border round vdw grid                    :   4.000
+  VDW cutoff fraction                      :   1.500
+  VDW cutoff distance                      :  20.000
+  Number of bins in VDW lookup             :  10000
+
+* Specific metal-coordination types                                             
+
+* Other settings                                                                
+  Write statistics                         : off
+  Current parameters file                  :
+  /home/hitesit/CCDC/Discovery_2022/GOLD/gold/gold.params                       
+--------------------------------------------------------------------------------
+
+Processing protein 1: /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb 	DE(Protein): 0.00
+
+--------------------------------------------------------------------------------
+--- Loading protein                                                          ---
+--------------------------------------------------------------------------------
+  Protein file                             : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb
+==================================
+APPLYING GOLD TEMPLATES TO PROTEIN
+==================================
+
+No templates identified from 
+
+==================================
+# WARNING: atom no  127 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom  128 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom  231 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  266 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no  273 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom  274 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom  293 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  400 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  442 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  464 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  513 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  582 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  663 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no  669 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom  670 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom  727 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  761 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1430 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1436 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1437 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1565 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1769 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1868 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2027 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2427 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2473 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3751 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3851 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3929 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3984 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3990 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3991 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4281 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4326 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4459 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4679 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4821 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4926 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5333 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5380 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6060 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6088 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6474 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6611 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7055 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7483 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7585 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7984 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8602 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9422 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9771 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10000 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10182 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10503 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  128 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom  274 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom  670 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1437 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3991 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/7rmh_cavity_clean.pdb is deduced as a singly charged oxygen
+  N.plc donors                             : 
+  arg:   76 arg:   78 arg:   79 arg:  396 arg:  398 arg:  399 
+  arg:  407 arg:  409 arg:  410 arg:  509 arg:  511 
+  arg:  512 arg: 1219 arg: 1221 arg: 1222 arg: 1268 
+  arg: 1270 arg: 1271 arg: 1292 arg: 1294 arg: 1295 
+  arg: 1688 arg: 1690 arg: 1691 arg: 1962 arg: 1964 
+  arg: 1965 arg: 2034 arg: 2036 arg: 2037 arg: 2693 
+  arg: 2695 arg: 2696 arg: 2747 arg: 2749 arg: 2750 
+  arg: 2863 arg: 2865 arg: 2866 arg: 2951 arg: 2953 
+  arg: 2954 arg: 3281 arg: 3283 arg: 3284 arg: 3305 
+  arg: 3307 arg: 3308 arg: 3405 arg: 3407 arg: 3408 
+  arg: 3496 arg: 3498 arg: 3499 arg: 3573 arg: 3575 
+  arg: 3576 arg: 3758 arg: 3760 arg: 3761 arg: 3807 
+  arg: 3809 arg: 3810 arg: 4149 arg: 4151 arg: 4152 
+  arg: 4173 arg: 4175 arg: 4176 arg: 4510 arg: 4512 
+  arg: 4513 arg: 5000 arg: 5002 arg: 5003 arg: 5541 
+  arg: 5543 arg: 5544 arg: 5727 arg: 5729 arg: 5730 
+  arg: 6748 arg: 6750 arg: 6751 arg: 7168 arg: 7170 
+  arg: 7171 arg: 7260 arg: 7262 arg: 7263 arg: 7926 
+  arg: 7928 arg: 7929 arg: 8079 arg: 8081 arg: 8082 
+  arg: 9639 arg: 9641 arg: 9642 arg: 9723 arg: 9725 
+  arg: 9726 arg: 10105 arg: 10107 arg: 10108 arg: 10398 
+  arg: 10400 arg: 10401 arg: 11089 arg: 11091 arg: 11092 
+  arg: 12013 arg: 12015 arg: 12016 arg: 12204 arg: 12206 
+  arg: 12207 arg: 12742 arg: 12744 arg: 12745 arg: 13584 
+  arg: 13586 arg: 13587 arg: 14613 arg: 14615 arg: 14616 
+  
+
+  Acidic nitrogen acceptors                : 
+
+  231  266  293  400  442  
+  464  513  582  663  727  
+  761  1124 1430 1565 1769 
+  1868 2027 2427 2473 3751 
+  3851 3929 3984 4281 4326 
+  4459 4679 4821 4926 5333 
+  5380 6060 6088 6474 6611 
+  7055 7483 7585 7984 8602 
+  9422 9771 10000 10182 10503 
+
+--------------------------------------------------------------------------------
+--- Active site                                                              ---
+--------------------------------------------------------------------------------
+  Reading active site residues list from   : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmh_cavity/cavity.residues
+  Cavity residues:                         : 
+ G:ASP26 N:SER21 B:HIS225 B:THR29 G:ILE28 N:CYS22 B:GLU226 B:SER31 G:VAL30

@@ -1,0 +1,13 @@
+Molecule file: /mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/classic_docking/output/example_2/example_2_merged.rescore.log
+
+Status Simplex RMSd      Score         DG    S(hbond)    S(metal)    S(lipo)     H(rot)  DE(clash)    DE(int)     intcor   Ligand identifier
+Ok     1       0.65      29.77     -30.20       0.97        0.00     217.74       1.56       0.01       0.43       ----   example_2|example_2_prep|mol2|1|dock1
+Ok     1       0.73      29.32     -29.96       0.97        0.00     215.69       1.56       0.16       0.48       ----   example_2|example_2_prep|mol2|1|dock2
+Ok     1       0.32      28.76     -29.29       0.97        0.00     209.89       1.56       0.03       0.50       ----   example_2|example_2_prep|mol2|1|dock3
+Ok     1       0.38      29.71     -30.29       0.93        0.00     219.68       1.56       0.17       0.41       ----   example_2|example_2_prep|mol2|1|dock4
+Ok     1       0.41      24.05     -30.54       0.00        0.00     248.20       1.56       4.85       1.64       ----   example_2|example_2_prep|mol2|1|dock5
+Ok     1       0.80      27.63     -29.63       0.99        0.00     212.12       1.56       0.11       1.89       ----   example_2|example_2_prep|mol2|1|dock6
+Ok     1       0.33      29.65     -30.18       1.00        0.00     216.79       1.56       0.09       0.45       ----   example_2|example_2_prep|mol2|1|dock7
+Ok     1       0.72      21.89     -27.32       0.00        0.00     220.72       1.56       2.97       2.45       ----   example_2|example_2_prep|mol2|1|dock8
+Ok     1       0.46      29.04     -29.94       0.93        0.00     216.41       1.56       0.50       0.40       ----   example_2|example_2_prep|mol2|1|dock9
+Ok     1       0.64      14.81     -23.29       0.00        0.00     186.25       1.56       5.53       2.94       ----   example_2|example_2_prep|mol2|1|dock10

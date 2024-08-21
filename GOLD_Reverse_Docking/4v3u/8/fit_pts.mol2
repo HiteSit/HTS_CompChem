@@ -1,0 +1,16 @@
+#       Name:                GA Fitting Points
+#       Creating user name   hitesit
+#       Creation time:       Sun Apr 16 23:06:24 2023
+
+
+#       Fitting Points Used by GA Software.
+#
+
+@<TRIPOS>MOLECULE
+GA Fitting Points
+     0    0    0
+SMALL
+NO_CHARGES
+
+
+@<TRIPOS>ATOM

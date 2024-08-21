@@ -1,0 +1,999 @@
+Warning message: 
+amide nitrogen 374 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 380 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+atom no  386 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+amide nitrogen 674 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 679 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 680 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 681 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+amide nitrogen 1220 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+amide nitrogen 1505 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2031 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2032 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2031 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2032 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2037 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2038 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2041 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+amide nitrogen 2507 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2512 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2513 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2514 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+amide nitrogen 2700 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2705 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2706 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+amide nitrogen 2871 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5060 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5069 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5070 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5060 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5069 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5070 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5066 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5067 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5069 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5070 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5060 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+amide nitrogen 5117 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5122 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5123 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  379 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  380 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  381 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  382 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  679 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  680 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  681 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  682 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  683 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom  684 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1225 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1226 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1227 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1228 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1229 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1230 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1510 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1511 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1512 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1513 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1514 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 1515 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2029 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2030 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2037 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2038 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2039 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2040 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2041 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2042 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2044 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2512 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2513 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2514 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2515 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2516 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2517 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2518 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2519 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2705 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2706 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2707 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2708 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2709 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2710 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2711 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2712 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2876 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2877 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2878 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2879 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2880 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 2881 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5057 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5058 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5065 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5066 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5067 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5068 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5069 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5070 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5122 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5123 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 5125 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 380 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 679 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 680 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 681 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2031 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2032 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2037 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2038 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2041 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2512 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2513 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2514 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2705 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2706 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5060 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5066 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5067 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5069 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5070 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5122 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 5123 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 679 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 680 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 681 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2705 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2706 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 679 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 680 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 681 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+not_o3_a: O.3 atom no 2880 connected to 5 atom(s).
+It should be connected to two atoms
+
+Warning message: 
+not_o3_a: O.3 atom no 2881 connected to 4 atom(s).
+It should be connected to two atoms
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2705 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2706 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+not_o3_a: O.3 atom no 1230 connected to 6 atom(s).
+It should be connected to two atoms
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 380 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 679 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 680 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 681 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2031 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2032 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2037 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2038 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2041 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2512 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2513 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2514 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2705 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2706 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5060 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5066 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5067 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5069 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5070 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5122 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 5123 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+Protein hydrogen 684 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 685 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 686 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 696 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 697 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 698 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2883 is connected to 3 atoms.
+Warning message: 
+Protein hydrogen 2890 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2891 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2718 is connected to 3 atoms.
+Warning message: 
+Protein hydrogen 2719 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2731 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2881 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2882 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2884 is connected to 3 atoms.
+Warning message: 
+Protein hydrogen 1517 is connected to 3 atoms.
+Warning message: 
+Protein hydrogen 1518 is connected to 3 atoms.
+Warning message: 
+Protein hydrogen 1522 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2715 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 1230 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 1235 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 1236 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 1515 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 1516 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 1527 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2712 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2713 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2714 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2716 is connected to 2 atoms.
+Warning message: 
+Protein hydrogen 2717 is connected to 2 atoms.
+Warning message: 
+find_connected_atoms: Atom no 380 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 679 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 680 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 681 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1225 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1226 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1510 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 1511 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2031 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2032 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2037 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2038 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2041 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2512 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2513 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2514 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2705 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2706 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2707 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2708 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2876 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 2877 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5060 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5069 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5070 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5066 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5067 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5122 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 5123 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+

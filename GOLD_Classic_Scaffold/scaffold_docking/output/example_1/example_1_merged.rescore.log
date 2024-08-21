@@ -1,0 +1,13 @@
+Molecule file: /mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/output/example_1/example_1_merged.rescore.log
+
+Status Simplex RMSd      Score         DG    S(hbond)    S(metal)    S(lipo)     H(rot)  DE(clash)    DE(int)    DE(con)     intcor   Ligand identifier
+Ok     1       0.85      33.00     -35.16       0.88        0.00     264.21       1.63       0.68       1.47       0.00       ----   example_1|example_1_prep|mol2|1|dock1
+Ok     1       0.60      26.31     -33.80       0.96        0.00     250.22       1.63       6.55       0.94       0.00       ----   example_1|example_1_prep|mol2|1|dock2
+Ok     1       0.84      32.44     -34.84       0.88        0.00     261.62       1.63       0.88       1.52       0.00       ----   example_1|example_1_prep|mol2|1|dock3
+Ok     1       0.97      32.74     -34.98       0.92        0.00     261.65       1.63       0.47       1.76       0.00       ----   example_1|example_1_prep|mol2|1|dock4
+Ok     1       0.85      32.98     -34.97       0.89        0.00     262.17       1.63       0.32       1.68       0.00       ----   example_1|example_1_prep|mol2|1|dock5
+Ok     1       0.85      33.01     -35.19       0.89        0.00     264.19       1.63       0.59       1.58       0.00       ----   example_1|example_1_prep|mol2|1|dock6
+Ok     1       0.82      32.85     -35.32       0.98        0.00     262.87       1.63       1.04       1.44       0.00       ----   example_1|example_1_prep|mol2|1|dock7
+Ok     1       0.88      32.54     -34.75       0.83        0.00     262.12       1.63       0.82       1.38       0.00       ----   example_1|example_1_prep|mol2|1|dock8
+Ok     1       0.76      31.97     -35.57       0.88        0.00     267.67       1.63       2.00       1.60       0.00       ----   example_1|example_1_prep|mol2|1|dock9
+Ok     1       0.75      33.50     -35.31       0.96        0.00     263.13       1.63       0.17       1.64       0.00       ----   example_1|example_1_prep|mol2|1|dock10

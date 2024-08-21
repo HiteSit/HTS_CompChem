@@ -1,0 +1,14 @@
+Beginning ligand file '/mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/5adg/ligand_prepared.mol2'
+Starting at ligand 1 (byte position 0) in file '/mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/5adg/ligand_prepared.mol2'
+Finishing at final ligand in file '/mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/5adg/ligand_prepared.mol2'
+Completed docking of ligand 1 in ligand file '/mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/5adg/ligand_prepared.mol2' in 8.446194 seconds
+
+Finished GOLD batch job, exiting..
+
+
+--------------------------------------------------------------------------------
+
+* Total run time :                                                              
+  total 13.1313 user 11.5049 sys  1.6264
+
+--------------------------------------------------------------------------------

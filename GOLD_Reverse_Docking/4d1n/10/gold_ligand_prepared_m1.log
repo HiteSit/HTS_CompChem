@@ -1,0 +1,2139 @@
+
+--------------------------------------------------------------------------------
+--- Ligand                                                                   ---
+--------------------------------------------------------------------------------
+  Ligand loaded from file                  : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4d1n/ligand_prepared.mol2
+  Ligand name                              :  
+  "CT1002167954                                                             "
+
+--------------------------------------------------------------------------------
+  N.plc donors                             : 
+  none found
+
+  Acidic nitrogen acceptors                : 
+  none found
+  Sulfur acceptors                         :
+  none found
+
+
+  Donor atoms                              :      2
+  8   10  
+  Acceptor atoms                           :      3
+  9   11  17  
+
+  Hydrogens                                :  (n = 2)
+  22   23   
+
+  Lone pairs added to molecule             :      6
+  Numbering                                : from 30 to 35
+
+--------------------------------------------------------------------------------
+--- Postprocessing of typing                                                 ---
+--------------------------------------------------------------------------------
+  Fragment file                            : /home/hitesit/CCDC/Discovery_2022/GOLD/gold/rotatable_bond_override.mol2
+  acylurea fragment                        : 2 matches
+  Ligand bond 15-8  set to flip
+  Ligand bond 15-10  set to flip
+  Ligand bond 15-10  set to 1
+  Ligand bond 15-8  set to 1
+  Ligand bond 10-4  set to flip
+  Ligand bond 8-3  set to flip
+  thioacylthiourea fragment                : no matches
+  acylthiourea fragment                    : no matches
+  thioacylurea fragment                    : no matches
+  diarylamine fragment >C.ar-NH-C.ar<      : no matches
+  sec-amine (1) fragment                   : no matches
+  sec-amine (2) fragment                   : no matches
+  sec-amine (3) fragment                   : no matches
+  carboxylic ester                         : no matches
+
+* Rotatable bonds in /mnt/c/Users/ricca/D  :
+  [   1    2] [   1    5] 
+  No. of rotatable bonds                   :      2
+
+
+* Reading torsional distributions from file:
+  /home/hitesit/CCDC/Discovery_2022/GOLD/gold/gold.tordist
+  No. of bins in torsional distributions   :     36
+  Minimum size of largest peak             :      0
+  Removing high energy torsions            : on
+  Delta E set to                           :   2.500
+
+* Fragments found in /mnt/c/Users/ricca/D  :
+  atom   2: benzene
+  atom   6: benzene
+  atom   7: benzene
+  atom  13: benzene
+  atom  14: benzene
+  atom  16: benzene
+
+
+* Checking torsion distributions:                                               
+  No. of matched torsions                  :      0
+
+--------------------------------------------------------------------------------
+--- Shape fitting atoms selection (hydrophobic atoms)                        ---
+--------------------------------------------------------------------------------
+  Molecule                                 : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4d1n/ligand_prepared.mol2
+  Selection                                : carbons only
+  Atom numbers                             :  (n = 7)
+  5    6    7    12   13   14   16   
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Setup                                                  ---
+--------------------------------------------------------------------------------
+  Cluster size                             :      2
+  RMSD                                     :   2.000
+  Refinement                               :      0
+
+
+--------------------------------------------------------------------------------
+--- ChemScore ligand setup summary                                           ---
+--------------------------------------------------------------------------------
+  ChemScore ligand acceptors               :      3
+  9 11 17 
+  ChemScore ligand donors                  :      2
+  8 ( 22  ) 10 ( 23  ) 
+  ChemScore ligand CH donors               :      0
+  
+
+  ChemScore ligand lipophilic atoms        :  (n = 9)
+  1    2    5    6    7    12   13   14   16   
+
+  ChemScore ligand rotatable bonds         :      2
+  1   (C1 ) - 2   (C2 ): SP3_SP2_BOND
+  1   (C1 ) - 5   (C5 ): SP3_SP3_BOND
+
+--------------------------------------------------------------------------------
+--- PLP ligand setup summary                                                 ---
+--------------------------------------------------------------------------------
+    1    C1   C.3 NONPOLAR
+    2    C2  C.ar NONPOLAR
+    3    C3   C.2 NONPOLAR
+    4    C4   C.2 NONPOLAR
+    5    C5   C.3 NONPOLAR
+    6    C6  C.ar NONPOLAR
+    7    C7  C.ar NONPOLAR
+    8    N8  N.am DONOR
+    9    O9   O.2 ACCEPTOR
+   10   N10  N.am DONOR
+   11   O11   O.2 ACCEPTOR
+   12   C12   C.3 NONPOLAR
+   13   C13  C.ar NONPOLAR
+   14   C14  C.ar NONPOLAR
+   15   C15   C.2 NONPOLAR
+   16   C16  C.ar NONPOLAR
+   17   O17   O.2 ACCEPTOR
+
+--------------------------------------------------------------------------------
+--- Automatic parameter setting                                              ---
+--------------------------------------------------------------------------------
+  Contribution base                        :   2500
+  Contribution per rotatable bond          :   6000
+  Contribution per df                      :   4000
+  Contribution per water                   :  10000
+  Ligand rotatable bonds                   :      2
+  Protein flexible side chain bonds        :      0
+  Total rotatable bonds                    :      2
+  Hydrophobic vol ratio (P/L)              :   1.120
+  Base multiplier (polar)                  :   1.000
+  Base multiplier (apolar)                 :   1.568
+  Base contribution                        : 5000.000
+  Fitting points                           :      5
+  Estimated maxops needed (optimal)        :  17500
+  Autoscale factor (in percent)            :     10
+  Scaled maxops                            :   2000
+
+--------------------------------------------------------------------------------
+
+* Population settings                                                           
+  maxops                                   :   2000
+  popsiz                                   :    100
+  select_pressure                          :   1.100
+  n_islands                                :      1
+  niche_siz                                :      2
+
+* GA settings                                                                   
+  pt_crosswt                               :    100
+  allele_mutatewt                          :    100
+  migratewt                                :      0
+
+* Search settings                                                               
+  start_vdw_linear_cutoff                  :   6.000
+  initial_virtual_pt_match_max             :   3.000
+  Scaling of internal VDW energy           : log scale from  0.2 to    1
+                                             over 1500 ops
+  Sampling interval (operations)           :     20
+  Scaling of virtual pt maximum length     : linear scale from    3 to    2
+                                             over  1500 ops
+  Sampling interval (operations)           :     60
+  Scaling of 4-8 potential cutoff          : log scale from    6 to 1.2e+02
+                                             over 1500 ops
+  Sampling interval (operations)           :     60
+
+--------------------------------------------------------------------------------
+
+* Ligand initialisation time :                                                  
+  total  0.0115 user  0.0000 sys  0.0115
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+** Docking run number  1 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :      6
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      39.37       9.36      23.93       0.00     -14.44      -0.77
+       149      37.31       7.58      23.70       0.00     -12.24      -0.76
+       337      36.37       3.44      24.23       0.00      -1.40      -0.76
+       437      34.66       3.39      23.06       0.00      -1.40      -0.76
+       586      34.92       2.36      23.77       0.00      -0.30      -0.76
+       807      33.30       2.18      22.73       0.00      -0.30      -0.76
+       978      31.91       2.15      21.66       0.00      -0.04      -0.76
+      1122      33.28       5.68      21.19       0.00      -2.30      -0.76
+      1314      32.45       5.02      21.30       0.00      -2.30      -0.76
+      1639      31.22       4.22      21.31       0.00      -2.30      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      31.22       4.22      21.31       0.00      -2.30      -0.76
+
+#ops:       2000 #mutates:    970 #cross:     1030 #dups:       332 
+#niche:     1012 #errors:       5 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1766, best score  38.99
+
+Ligand is stored in gold_soln_ligand_prepared_m1_1.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     38.99       6.42      24.80       0.00      -1.53      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor    9 Protein hydrogen 23770 donor 23719 bond energy  6.00 wt 0.96
+  Ligand acceptor    9 Protein hydrogen 23774 donor 23722 bond energy  6.00 wt 0.06
+  Ligand donor   10 hydrogen   23 Protein acceptor 4055 bond energy  2.00 wt 0.15
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+      0.99       1.88       1.69       0.00       0.00       1.76       0.22
+
+Doing AMOEBA simplex on best individual
+AMOEBA simplex failed to converge after 2000 iterations
+Done simplexing #iterations 2000, best score  30.49
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     30.49     -29.66       1.00       0.00       0.00       2.01       0.08
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -2.78
+metal                   :       0.00
+buried (polar-nonpolar) :      -3.44
+nonpolar                :     -26.42
+repulsive               :       2.45
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 23719 hydrogen 23770 Ligand acceptor    9 bond energy  1.00 wt 1.00
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+  6 (C6   ) -   3 (C3   ):   2.01 (dist   2.69)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  -15.59
+[  12    5    1    2]  172.34
+Protein Torsions
+[1594 1544 1543 1542] -105.80 
+[4304 4284 4283 4280] -138.54 
+[4344 4323 4324 4325]  172.18 
+[4348 4328 4327 4324] -144.21 
+[6708 6672 6671 6669] -105.53 
+[23762 23712 23713 23714]  100.14 
+[23800 23787 23788 23789] -167.04 
+[6926 6895 6896 6897]  162.62 
+[4168 4129 4130 4131] -130.48 
+[4085 4052 4053 4054]  159.70 
+[1354 1313 1314 1315]   14.25 
+[1584 1536 1537 1538]  121.53 
+[23828 23815 23816 23817]   97.08 
+[1288 1260 1258 1255]   14.00 
+[25744 25716 25717 25718]    6.97 
+[27193 4055 4054 4053] -143.46 
+[27195 4282 4281 4280]  137.13 
+[27200 4326 4325 4324]  151.23 
+[27211 23656 23655 23654]  103.61 
+[27214 23715 23714 23713]  -89.03 
+[27218 6898 6897 6896]  -23.09 
+[27220 25719 25718 25717]   93.13 
+[27226 1316 1315 1314] -159.77 
+[27230 23818 23817 23816]   73.64 
+[27232 1257 1256 1255]  -41.20 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+  2   5 [ 23->4323]
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1  1396 [  5->(227.750   1.250  43.000)]
+  2  2720 [  6->(228.750   3.250  44.250)]
+  5  3137 [ 13->(229.000   6.000  45.750)]
+  6  2421 [ 14->(228.500   5.500  45.500)]
+  7  3130 [ 16->(229.000   5.750  46.000)]
+Chromosome values
+Integers:
+  -1   -1   -1   -1    4 1395 2719   -1   -1 3136 2420 3129 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  19326
+  Move failures                            :      0
+  Failure rate                             :   0.000
+
+--------------------------------------------------------------------------------
+
+Current Ranking  1
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4419 user  0.4259 sys  0.0161
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 19335
+
+--------------------------------------------------------------------------------
+** Docking run number  2 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :      6
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      36.68       3.99      23.86       0.00      -0.59      -0.76
+       257      35.42       6.15      22.70       0.00      -7.54      -0.76
+       404      34.92       6.06      22.67       0.00      -7.54      -0.76
+       443      34.73       6.02      22.63       0.00      -7.54      -0.76
+       482      34.53       5.99      22.59       0.00      -7.54      -0.76
+       549      34.87       6.23      21.65       0.00      -3.19      -0.76
+       753      34.99       5.72      21.60       0.00      -0.96      -0.76
+Reordering...
+       760      34.36       6.03      21.65       0.00      -3.19      -0.76
+       935      34.40       5.59      21.32       0.00      -0.96      -0.76
+Reordering...
+       940      33.83       5.81      21.65       0.00      -3.19      -0.76
+      1051      35.81       6.45      22.25       0.00      -2.01      -0.76
+      1408      35.58       7.98      20.70       0.00      -0.96      -0.76
+      1430      37.04       8.00      21.77       0.00      -0.96      -0.76
+      1683      37.33       8.00      22.03       0.00      -0.96      -0.76
+      1979      38.13       7.40      23.32       0.00      -1.34      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      38.13       7.40      23.32       0.00      -1.34      -0.76
+
+#ops:       2000 #mutates:   1019 #cross:      981 #dups:       358 
+#niche:     1195 #errors:       5 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1123, best score  39.97
+
+Ligand is stored in gold_soln_ligand_prepared_m1_2.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     39.97       8.06      23.84       0.00      -0.87      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor    9 Protein hydrogen 4344 donor 4323 bond energy  2.00 wt 0.03
+  Ligand acceptor   11 Protein hydrogen 23770 donor 23719 bond energy  6.00 wt 1.00
+  Ligand donor    8 hydrogen   22 Protein acceptor 4284 bond energy  2.00 wt 1.00
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     20.44     -19.32       1.07       0.00       0.00       0.00       1.05
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1333, best score  29.08
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     29.08     -28.00       0.96       0.00       0.00       0.00       0.90
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -0.94
+metal                   :       0.00
+buried (polar-nonpolar) :      -6.38
+nonpolar                :     -25.63
+repulsive               :       3.54
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Ligand donor    8 hydrogen   22 Protein acceptor 4284 bond energy  1.00 wt 0.96
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  153.55
+[  12    5    1    2]  168.37
+Protein Torsions
+[1594 1544 1543 1542]  -11.58 
+[4304 4284 4283 4280]   36.69 
+[4344 4323 4324 4325]  179.59 
+[4348 4328 4327 4324]  173.90 
+[6708 6672 6671 6669]  -41.90 
+[23762 23712 23713 23714]  -16.28 
+[23800 23787 23788 23789]  -25.90 
+[6926 6895 6896 6897]   64.36 
+[4168 4129 4130 4131] -150.88 
+[4085 4052 4053 4054] -156.50 
+[1354 1313 1314 1315]  142.22 
+[1584 1536 1537 1538]  -20.30 
+[23828 23815 23816 23817]   54.07 
+[1288 1260 1258 1255]  144.43 
+[25744 25716 25717 25718]  138.16 
+[27193 4055 4054 4053] -106.27 
+[27195 4282 4281 4280]  114.43 
+[27200 4326 4325 4324]   58.77 
+[27211 23656 23655 23654]  -24.50 
+[27214 23715 23714 23713] -176.51 
+[27218 6898 6897 6896]  128.38 
+[27220 25719 25718 25717]    3.32 
+[27226 1316 1315 1314]   27.70 
+[27230 23818 23817 23816]  -92.05 
+[27232 1257 1256 1255]   28.49 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+  2  19 [ 11->23770]
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+  1   4 [ 22->4284]
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1  3543 [  5->(229.500   0.750  44.000)]
+  7  1473 [ 16->(227.750   4.500  46.250)]
+Chromosome values
+Integers:
+  -1   18   -1    3   -1 3542   -1   -1   -1   -1   -1 1472 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  17580
+  Move failures                            :      0
+  Failure rate                             :   0.000
+
+--------------------------------------------------------------------------------
+
+Current Ranking  2  1
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4098 user  0.3897 sys  0.0200
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 17589
+
+--------------------------------------------------------------------------------
+** Docking run number  3 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :     10
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      39.32       4.92      25.65       0.00      -4.33      -0.76
+       149      41.64       6.70      26.87       0.00      -8.61      -0.76
+       334      41.93       9.98      23.94       0.00      -3.44      -0.76
+       363      42.31       9.95      24.27       0.00      -3.44      -0.76
+       371      42.31       9.96      24.27       0.00      -3.44      -0.76
+       430      41.86       9.65      24.21       0.00      -3.44      -0.76
+       671      39.20       9.16      22.86       0.00      -3.44      -0.76
+       683      39.17       9.16      22.86       0.00      -3.44      -0.76
+       981      35.53       8.55      21.05       0.00      -3.44      -0.76
+Reordering...
+      1020      34.67       5.39      22.74       0.00      -3.34      -0.76
+      1031      38.22       6.80      24.30       0.00      -3.34      -0.76
+      1905      35.59       5.48      24.33       0.00      -3.34      -0.76
+      1955      35.64       5.48      24.52       0.00      -3.54      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      35.64       5.48      24.52       0.00      -3.54      -0.76
+
+#ops:       2000 #mutates:   1011 #cross:      989 #dups:       389 
+#niche:     1093 #errors:       6 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1333, best score  40.42
+
+Ligand is stored in gold_soln_ligand_prepared_m1_3.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     40.42       6.26      26.23       0.00      -1.92      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor    9 Protein hydrogen 23774 donor 23722 bond energy  6.00 wt 0.98
+  Ligand donor    8 hydrogen   22 Protein acceptor 6904 bond energy  6.00 wt 0.03
+  Ligand donor   10 hydrogen   23 Protein acceptor 4284 bond energy  2.00 wt 0.09
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     25.52     -22.12       1.66       0.00       0.00       1.34       0.12
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1369, best score  36.52
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     36.52     -32.00       2.02       0.00       0.00       1.41       0.06
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -3.57
+metal                   :       0.00
+buried (polar-nonpolar) :       0.67
+nonpolar                :     -32.42
+repulsive               :       1.76
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 6672 hydrogen 6708 Ligand acceptor   17 bond energy  1.00 wt 0.30
+Protein donor 23719 hydrogen 23770 Ligand acceptor    9 bond energy  1.00 wt 0.72
+Protein donor 23722 hydrogen 23774 Ligand acceptor    9 bond energy  1.00 wt 0.99
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+  7 (C7   ) -   4 (C4   ):   1.41 (dist   2.71)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]   70.80
+[  12    5    1    2] -179.89
+Protein Torsions
+[1594 1544 1543 1542]  -23.02 
+[4304 4284 4283 4280]   51.16 
+[4344 4323 4324 4325]   24.08 
+[4348 4328 4327 4324]  143.02 
+[6708 6672 6671 6669]  166.23 
+[23762 23712 23713 23714] -146.13 
+[23800 23787 23788 23789]   25.30 
+[6926 6895 6896 6897]   52.33 
+[4168 4129 4130 4131]  155.45 
+[4085 4052 4053 4054]  145.62 
+[1354 1313 1314 1315]  -56.57 
+[1584 1536 1537 1538] -158.80 
+[23828 23815 23816 23817]   42.42 
+[1288 1260 1258 1255]  178.96 
+[25744 25716 25717 25718]   74.66 
+[27193 4055 4054 4053] -172.77 
+[27195 4282 4281 4280]  -59.74 
+[27200 4326 4325 4324]  150.02 
+[27211 23656 23655 23654]  117.00 
+[27214 23715 23714 23713]  105.40 
+[27218 6898 6897 6896]   25.69 
+[27220 25719 25718 25717]   -8.23 
+[27226 1316 1315 1314]   93.51 
+[27230 23818 23817 23816]  103.02 
+[27232 1257 1256 1255]  130.88 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+  1  23 [  9->23774]
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+  1   9 [ 22->6904]
+  2   4 [ 23->4284]
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  5  3416 [ 13->(229.250   6.500  45.250)]
+  6  2031 [ 14->(228.250   4.500  45.500)]
+  7  2096 [ 16->(228.250   6.500  46.750)]
+Chromosome values
+Integers:
+  22   -1   -1    8    3   -1   -1   -1   -1 3415 2030 2095 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  17919
+  Move failures                            :      0
+  Failure rate                             :   0.000
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4317 user  0.4215 sys  0.0102
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 17933
+
+--------------------------------------------------------------------------------
+** Docking run number  4 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :     36
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      34.00       4.19      21.97       0.00      -1.96      -0.76
+       108      33.61       1.68      24.43       0.00      -7.43      -0.76
+       138      34.84       5.22      22.00       0.00      -2.77      -0.76
+       233      36.31       6.37      22.28       0.00      -2.77      -0.76
+       365      34.94       6.10      21.56       0.00      -2.77      -0.76
+       798      32.18       2.45      22.16       0.00      -1.60      -0.76
+      1042      30.98       2.13      21.69       0.00      -1.60      -0.76
+      1066      31.00       2.13      21.72       0.00      -1.60      -0.76
+      1205      31.06       2.44      23.22       0.00      -4.57      -0.76
+      1217      31.25       2.44      23.36       0.00      -4.57      -0.76
+      1467      30.51       5.42      19.24       0.00      -1.43      -0.76
+      1546      29.98       5.37      18.94       0.00      -1.43      -0.76
+      1726      29.99       5.37      18.94       0.00      -1.43      -0.76
+      1819      30.04       5.54      19.51       0.00      -2.33      -0.76
+      1941      30.76       6.32      18.82       0.00      -1.43      -0.76
+      1990      30.99       0.83      22.42       0.00      -0.67      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      30.99       0.83      22.42       0.00      -0.67      -0.76
+
+#ops:       2000 #mutates:   1022 #cross:      978 #dups:       354 
+#niche:      963 #errors:      57 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1876, best score  37.64
+
+Ligand is stored in gold_soln_ligand_prepared_m1_4.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     37.64       4.39      24.26       0.00      -0.11      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor    9 Protein hydrogen 6708 donor 6672 bond energy  2.00 wt 0.02
+  Ligand acceptor   11 Protein hydrogen 23770 donor 23719 bond energy  6.00 wt 0.58
+  Ligand donor    8 hydrogen   22 Protein acceptor 4284 bond energy  2.00 wt 0.42
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     18.83     -16.12       0.94       0.00       0.00       0.00       0.06
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1577, best score  32.25
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     32.25     -32.33       0.24       0.00       0.00       0.00       0.40
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -2.05
+metal                   :       0.00
+buried (polar-nonpolar) :      -5.44
+nonpolar                :     -25.23
+repulsive               :       0.16
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 6672 hydrogen 6708 Ligand acceptor    9 bond energy  1.00 wt 0.24
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  -47.74
+[  12    5    1    2]  171.33
+Protein Torsions
+[1594 1544 1543 1542]   -6.33 
+[4304 4284 4283 4280]   24.59 
+[4344 4323 4324 4325] -129.08 
+[4348 4328 4327 4324]  -24.19 
+[6708 6672 6671 6669] -119.07 
+[23762 23712 23713 23714]   18.35 
+[23800 23787 23788 23789]   23.80 
+[6926 6895 6896 6897]  -89.48 
+[4168 4129 4130 4131]  -51.22 
+[4085 4052 4053 4054] -135.17 
+[1354 1313 1314 1315]  105.74 
+[1584 1536 1537 1538]  123.09 
+[23828 23815 23816 23817]  -97.30 
+[1288 1260 1258 1255]  -26.33 
+[25744 25716 25717 25718]   48.44 
+[27193 4055 4054 4053] -166.17 
+[27195 4282 4281 4280]   55.27 
+[27200 4326 4325 4324]   47.31 
+[27211 23656 23655 23654]  -91.27 
+[27214 23715 23714 23713]   -2.38 
+[27218 6898 6897 6896]   68.55 
+[27220 25719 25718 25717] -118.93 
+[27226 1316 1315 1314] -156.97 
+[27230 23818 23817 23816]   47.06 
+[27232 1257 1256 1255]    6.14 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  2   967 [  6->(226.750   0.500  44.750)]
+  4  2908 [ 12->(229.000  -0.750  43.250)]
+  6  3406 [ 14->(229.250   6.000  46.000)]
+Chromosome values
+Integers:
+  -1   -1   -1   -1   -1   -1  966   -1 2907   -1 3405   -1 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  18970
+  Move failures                            :     84
+  Failure rate                             :   0.004
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4395 user  0.4204 sys  0.0192
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 18977
+
+--------------------------------------------------------------------------------
+** Docking run number  5 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :     77
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      33.42       3.86      21.67       0.00      -1.14      -0.76
+        45      38.85       6.88      25.24       0.00     -13.12      -0.76
+Reordering...
+       300      32.37       1.50      23.75       0.00      -6.46      -0.76
+       503      31.09       1.40      23.36       0.00      -7.09      -0.76
+       662      30.20       5.48      19.26       0.00      -4.37      -0.76
+       732      30.36       7.40      17.83       0.00      -3.61      -0.76
+Reordering...
+       780      29.84       5.37      19.26       0.00      -4.37      -0.76
+       795      30.15       4.77      21.06       0.00      -7.75      -0.76
+       813      32.44       5.01      21.40       0.00      -4.20      -0.76
+      1095      31.47       6.24      20.38       0.00      -4.37      -0.76
+      1374      29.53       6.11      20.15       0.00      -4.98      -0.76
+      1530      33.58       6.00      23.68       0.00      -4.98      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      33.58       6.00      23.68       0.00      -4.98      -0.76
+
+#ops:       2000 #mutates:    985 #cross:     1015 #dups:       283 
+#niche:     1071 #errors:      73 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1107, best score  36.70
+
+Ligand is stored in gold_soln_ligand_prepared_m1_5.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     36.70       6.00      24.57       0.00      -3.08      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor    9 Protein hydrogen 23774 donor 23722 bond energy  6.00 wt 1.00
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     29.35     -28.15       0.96       0.00       0.00       0.86       0.41
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 880, best score  34.55
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     34.55     -33.12       1.00       0.00       0.00       1.28       0.14
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -2.53
+metal                   :       0.00
+buried (polar-nonpolar) :      -4.65
+nonpolar                :     -26.81
+repulsive               :       0.46
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 23722 hydrogen 23774 Ligand acceptor    9 bond energy  1.00 wt 1.00
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+  7 (C7   ) -   3 (C3   ):   1.28 (dist   2.71)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  163.52
+[  12    5    1    2]   45.12
+Protein Torsions
+[1594 1544 1543 1542]   44.27 
+[4304 4284 4283 4280]  -77.70 
+[4344 4323 4324 4325]  -89.80 
+[4348 4328 4327 4324]   -8.90 
+[6708 6672 6671 6669]   48.05 
+[23762 23712 23713 23714] -175.85 
+[23800 23787 23788 23789]  -19.52 
+[6926 6895 6896 6897]   61.45 
+[4168 4129 4130 4131]   13.10 
+[4085 4052 4053 4054]  -31.09 
+[1354 1313 1314 1315]  -18.21 
+[1584 1536 1537 1538] -178.28 
+[23828 23815 23816 23817] -101.63 
+[1288 1260 1258 1255]   80.68 
+[25744 25716 25717 25718]  170.45 
+[27193 4055 4054 4053]   27.03 
+[27195 4282 4281 4280] -111.40 
+[27200 4326 4325 4324]  -72.72 
+[27211 23656 23655 23654]  -18.11 
+[27214 23715 23714 23713]  -54.53 
+[27218 6898 6897 6896] -120.02 
+[27220 25719 25718 25717]  126.92 
+[27226 1316 1315 1314]  158.10 
+[27230 23818 23817 23816]  124.91 
+[27232 1257 1256 1255]  -84.09 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1  3320 [  5->(229.250   1.000  44.750)]
+  3  1134 [  7->(227.250   2.000  42.250)]
+  7   843 [ 16->(226.000   1.000  41.000)]
+Chromosome values
+Integers:
+  -1   -1   -1   -1   -1 3319   -1 1133   -1   -1   -1  842 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  16784
+  Move failures                            :    139
+  Failure rate                             :   0.008
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4  5
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4151 user  0.4046 sys  0.0105
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 16794
+
+--------------------------------------------------------------------------------
+** Docking run number  6 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :     70
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      34.56       8.13      20.39       0.00      -8.02      -0.76
+       105      35.01       3.67      22.93       0.00      -0.87      -0.76
+       166      34.51       3.60      22.64       0.00      -0.87      -0.76
+       185      35.43       3.30      23.52       0.00      -0.87      -0.76
+       405      35.73       2.82      24.13       0.00      -0.87      -0.76
+       784      33.91       2.57      23.08       0.00      -0.87      -0.76
+       892      33.75       2.54      23.03       0.00      -0.87      -0.76
+       993      33.52       2.60      22.96       0.00      -1.13      -0.76
+Reordering...
+      1020      33.14       2.45      22.70       0.00      -0.87      -0.76
+      1521      31.55       2.27      21.92       0.00      -0.87      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      31.55       2.27      21.92       0.00      -0.87      -0.76
+
+#ops:       2000 #mutates:    987 #cross:     1013 #dups:       364 
+#niche:     1010 #errors:      53 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1311, best score  35.36
+
+Ligand is stored in gold_soln_ligand_prepared_m1_6.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     35.36       1.54      25.18       0.00      -0.80      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand donor   10 hydrogen   23 Protein acceptor 6904 bond energy  6.00 wt 0.26
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     30.04     -29.95       0.09       0.00       0.00       0.00       0.08
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1852, best score  35.15
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     35.15     -35.39       0.00       0.00       0.00       0.00       0.12
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -2.14
+metal                   :       0.00
+buried (polar-nonpolar) :      -4.48
+nonpolar                :     -30.41
+repulsive               :       0.50
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  128.65
+[  12    5    1    2]  175.76
+Protein Torsions
+[1594 1544 1543 1542] -118.01 
+[4304 4284 4283 4280]   53.64 
+[4344 4323 4324 4325]   83.15 
+[4348 4328 4327 4324]  120.73 
+[6708 6672 6671 6669] -179.45 
+[23762 23712 23713 23714]    5.36 
+[23800 23787 23788 23789]  -77.01 
+[6926 6895 6896 6897]  111.26 
+[4168 4129 4130 4131]   58.35 
+[4085 4052 4053 4054]   -7.13 
+[1354 1313 1314 1315] -102.43 
+[1584 1536 1537 1538] -113.82 
+[23828 23815 23816 23817]   46.93 
+[1288 1260 1258 1255]   78.64 
+[25744 25716 25717 25718]   98.19 
+[27193 4055 4054 4053] -150.46 
+[27195 4282 4281 4280]   94.21 
+[27200 4326 4325 4324]  -15.12 
+[27211 23656 23655 23654]  -16.64 
+[27214 23715 23714 23713]  164.42 
+[27218 6898 6897 6896]  -97.61 
+[27220 25719 25718 25717]   97.55 
+[27226 1316 1315 1314] -126.00 
+[27230 23818 23817 23816] -135.64 
+[27232 1257 1256 1255]   33.54 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+  2   9 [ 23->6904]
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1   986 [  5->(226.750   1.250  45.250)]
+  3  3072 [  7->(229.000   3.750  44.000)]
+  4  1062 [ 12->(227.250  -1.000  44.500)]
+Chromosome values
+Integers:
+  -1   -1   -1   -1    8  985   -1 3071 1061   -1   -1   -1 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  18383
+  Move failures                            :    148
+  Failure rate                             :   0.008
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4  5  6
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4387 user  0.4295 sys  0.0092
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 18390
+
+--------------------------------------------------------------------------------
+** Docking run number  7 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :     84
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      32.44       5.14      21.97       0.00     -14.57      -0.76
+        29      34.39       6.10      22.74       0.00     -14.57      -0.76
+Reordering...
+        60      32.40       3.79      21.12       0.00      -2.03      -0.76
+        86      35.03       1.95      25.13       0.00      -6.73      -0.76
+       236      34.07       7.26      22.73       0.00     -17.59      -0.76
+       456      31.83       7.01      22.15       0.00     -17.59      -0.76
+       770      27.74       5.23      17.04       0.00      -2.03      -0.76
+       778      28.16       7.97      15.37       0.00      -2.07      -0.76
+       941      28.62       2.25      19.23       0.00      -0.13      -0.76
+Reordering...
+      1080      27.29       7.48      15.37       0.00      -2.07      -0.76
+      1359      26.53       7.12      15.39       0.00      -2.07      -0.76
+      1427      27.88       6.56      16.76       0.00      -1.87      -0.76
+      1625      27.45       6.28      16.76       0.00      -1.87      -0.76
+      1702      27.78       0.96      20.24       0.00      -1.00      -0.76
+      1762      27.88       1.01      20.09       0.00      -0.75      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      27.88       1.01      20.09       0.00      -0.75      -0.76
+
+#ops:       2000 #mutates:   1013 #cross:      987 #dups:       338 
+#niche:      974 #errors:     101 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1268, best score  34.06
+
+Ligand is stored in gold_soln_ligand_prepared_m1_7.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     34.06       0.66      24.81       0.00      -0.72      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor   17 Protein hydrogen 23770 donor 23719 bond energy  6.00 wt 0.01
+  Ligand donor   10 hydrogen   23 Protein acceptor 6904 bond energy  6.00 wt 0.10
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     27.42     -27.93       0.00       0.00       0.00       0.00       0.25
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1626, best score  34.93
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     34.93     -35.33       0.00       0.00       0.00       0.00       0.20
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -2.11
+metal                   :       0.00
+buried (polar-nonpolar) :      -3.91
+nonpolar                :     -30.58
+repulsive               :       0.50
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  111.67
+[  12    5    1    2] -174.44
+Protein Torsions
+[1594 1544 1543 1542]  -18.91 
+[4304 4284 4283 4280]  -49.10 
+[4344 4323 4324 4325]   47.02 
+[4348 4328 4327 4324]   18.21 
+[6708 6672 6671 6669]  101.85 
+[23762 23712 23713 23714] -109.09 
+[23800 23787 23788 23789] -128.54 
+[6926 6895 6896 6897] -109.71 
+[4168 4129 4130 4131]  176.08 
+[4085 4052 4053 4054]   39.47 
+[1354 1313 1314 1315]  176.06 
+[1584 1536 1537 1538]    0.88 
+[23828 23815 23816 23817]   37.75 
+[1288 1260 1258 1255] -122.98 
+[25744 25716 25717 25718]   22.68 
+[27193 4055 4054 4053]  162.53 
+[27195 4282 4281 4280]  -57.59 
+[27200 4326 4325 4324] -112.85 
+[27211 23656 23655 23654]   68.73 
+[27214 23715 23714 23713]  -68.87 
+[27218 6898 6897 6896]   81.88 
+[27220 25719 25718 25717]  -35.43 
+[27226 1316 1315 1314]  106.54 
+[27230 23818 23817 23816]   -5.87 
+[27232 1257 1256 1255]  -66.52 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+  2   9 [ 23->6904]
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1   949 [  5->(226.750  -0.250  45.000)]
+  3  3102 [  7->(229.000   5.000  45.000)]
+  4   877 [ 12->(226.250   0.750  45.500)]
+  5  2029 [ 13->(228.250   4.250  45.250)]
+  6  2409 [ 14->(228.500   5.250  45.000)]
+  7  3416 [ 16->(229.250   6.500  45.250)]
+Chromosome values
+Integers:
+  -1   -1   -1   -1    8  948   -1 3101  876 2028 2408 3415 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  17927
+  Move failures                            :    410
+  Failure rate                             :   0.023
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4  5  6  7
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4366 user  0.4260 sys  0.0106
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 17943
+
+--------------------------------------------------------------------------------
+** Docking run number  8 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :    111
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      36.60       2.96      24.57       0.00      -0.71      -0.76
+Reordering...
+        60      35.84       6.00      25.01       0.00     -21.27      -0.76
+Reordering...
+        80      35.79       5.48      22.39       0.00      -2.17      -0.76
+       390      33.05       5.12      20.79       0.00      -2.17      -0.76
+       505      32.04       4.99      20.21       0.00      -2.17      -0.76
+      1027      29.67       4.41      18.71       0.00      -0.78      -0.76
+      1388      29.23       4.18      18.71       0.00      -0.78      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      29.05       4.10      18.71       0.00      -0.78      -0.76
+
+#ops:       2000 #mutates:   1011 #cross:      989 #dups:       306 
+#niche:      914 #errors:     136 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1284, best score  31.98
+
+Ligand is stored in gold_soln_ligand_prepared_m1_8.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     31.98       4.94      20.27       0.00      -0.82      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor   11 Protein hydrogen 23770 donor 23719 bond energy  6.00 wt 0.82
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     11.21     -13.15       0.14       0.00       0.00       0.00       1.18
+
+Doing AMOEBA simplex on best individual
+AMOEBA simplex failed to converge after 2000 iterations
+Done simplexing #iterations 2000, best score  38.09
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     38.09     -34.53       1.76       0.00       0.00       0.35       0.68
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -2.00
+metal                   :       0.00
+buried (polar-nonpolar) :      -3.30
+nonpolar                :     -31.26
+repulsive               :       0.27
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 23719 hydrogen 23770 Ligand acceptor   11 bond energy  1.00 wt 0.91
+Protein donor 23722 hydrogen 23774 Ligand acceptor   11 bond energy  1.00 wt 0.85
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+  7 (C7   ) -   4 (C4   ):   0.35 (dist   2.74)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]   85.09
+[  12    5    1    2] -165.18
+Protein Torsions
+[1594 1544 1543 1542]  -42.73 
+[4304 4284 4283 4280]   -5.66 
+[4344 4323 4324 4325]  128.50 
+[4348 4328 4327 4324]   32.35 
+[6708 6672 6671 6669]  -10.45 
+[23762 23712 23713 23714]  -93.37 
+[23800 23787 23788 23789]  -74.62 
+[6926 6895 6896 6897]  -15.55 
+[4168 4129 4130 4131]  -85.58 
+[4085 4052 4053 4054]   96.67 
+[1354 1313 1314 1315]   40.88 
+[1584 1536 1537 1538]   91.74 
+[23828 23815 23816 23817]  132.27 
+[1288 1260 1258 1255] -129.33 
+[25744 25716 25717 25718]   14.58 
+[27193 4055 4054 4053]  -45.74 
+[27195 4282 4281 4280] -109.07 
+[27200 4326 4325 4324] -115.81 
+[27211 23656 23655 23654]  168.85 
+[27214 23715 23714 23713]  139.89 
+[27218 6898 6897 6896] -167.38 
+[27220 25719 25718 25717]  -14.48 
+[27226 1316 1315 1314]   84.28 
+[27230 23818 23817 23816] -177.29 
+[27232 1257 1256 1255]  -38.77 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1  3745 [  5->(229.750   1.750  44.000)]
+  5  3387 [ 13->(229.250   5.500  44.750)]
+  6  2784 [ 14->(228.750   5.500  44.000)]
+Chromosome values
+Integers:
+  -1   -1   -1   -1   -1 3744   -1   -1   -1 3386 2783   -1 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  18394
+  Move failures                            :    644
+  Failure rate                             :   0.035
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4  5  6  7  8
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4222 user  0.4142 sys  0.0081
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 18403
+
+--------------------------------------------------------------------------------
+** Docking run number  9 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :    102
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      32.50      10.49      17.36       0.00      -9.33      -0.76
+        24      34.86       3.60      23.53       0.00      -5.35      -0.76
+       129      33.04       2.95      22.56       0.00      -4.06      -0.76
+       130      33.30       2.90      22.73       0.00      -3.78      -0.76
+Reordering...
+       240      30.35       3.17      20.63       0.00      -4.63      -0.76
+       335      30.07       5.16      19.37       0.00      -6.12      -0.76
+       381      30.70       4.59      22.11       0.00     -14.28      -0.76
+       384      33.59       5.98      21.42       0.00      -6.12      -0.76
+       947      28.00       5.27      18.98       0.00      -6.12      -0.76
+      1009      27.36       5.18      18.73       0.00      -6.12      -0.76
+Reordering...
+      1140      25.38       8.80      13.87       0.00      -3.66      -0.76
+      1235      27.50       4.32      18.05       0.00      -2.21      -0.76
+      1476      26.74       6.00      21.45       0.00      -9.14      -0.76
+      1478      26.86       6.00      21.54       0.00      -9.14      -0.76
+      1520      26.65       0.00      19.97       0.00      -0.81      -0.76
+      1695      27.18       0.00      20.37       0.00      -0.82      -0.76
+      1782      27.24       0.00      20.27       0.00      -0.63      -0.76
+      1904      30.11       6.00      22.01       0.00      -6.15      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      30.11       6.00      22.01       0.00      -6.15      -0.76
+
+#ops:       2000 #mutates:    989 #cross:     1011 #dups:       314 
+#niche:      944 #errors:      63 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1548, best score  37.64
+
+Ligand is stored in gold_soln_ligand_prepared_m1_9.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     37.64       6.00      25.27       0.00      -3.12      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor    9 Protein hydrogen 23774 donor 23722 bond energy  6.00 wt 1.00
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     24.29     -25.41       0.49       0.00       0.00       0.00       1.29
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1370, best score  33.10
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     33.10     -32.07       1.00       0.00       0.00       0.01       0.98
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -1.53
+metal                   :       0.00
+buried (polar-nonpolar) :      -5.21
+nonpolar                :     -26.56
+repulsive               :       0.67
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 23722 hydrogen 23774 Ligand acceptor    9 bond energy  1.00 wt 1.00
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+  7 (C7   ) -   3 (C3   ):   0.01 (dist   2.75)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  161.67
+[  12    5    1    2]   45.19
+Protein Torsions
+[1594 1544 1543 1542]  -41.90 
+[4304 4284 4283 4280] -114.20 
+[4344 4323 4324 4325]   61.86 
+[4348 4328 4327 4324]  173.47 
+[6708 6672 6671 6669]   28.61 
+[23762 23712 23713 23714]  133.62 
+[23800 23787 23788 23789]   84.24 
+[6926 6895 6896 6897] -124.41 
+[4168 4129 4130 4131]  -51.66 
+[4085 4052 4053 4054]  173.68 
+[1354 1313 1314 1315]   57.19 
+[1584 1536 1537 1538]   -8.14 
+[23828 23815 23816 23817]  -10.63 
+[1288 1260 1258 1255]  -85.69 
+[25744 25716 25717 25718]    7.21 
+[27193 4055 4054 4053]  101.66 
+[27195 4282 4281 4280] -108.62 
+[27200 4326 4325 4324] -129.01 
+[27211 23656 23655 23654] -164.00 
+[27214 23715 23714 23713]   14.17 
+[27218 6898 6897 6896]  162.40 
+[27220 25719 25718 25717]   76.31 
+[27226 1316 1315 1314]  177.02 
+[27230 23818 23817 23816]  -46.53 
+[27232 1257 1256 1255]  102.84 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+  1  23 [  9->23774]
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  1  2692 [  5->(228.750   2.000  44.250)]
+  3  1267 [  7->(227.500   2.500  42.750)]
+Chromosome values
+Integers:
+  22   -1   -1   -1   -1 2691   -1 1266   -1   -1   -1   -1 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  18145
+  Move failures                            :    158
+  Failure rate                             :   0.009
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4  9  5  6  7  8
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4358 user  0.4246 sys  0.0112
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 18150
+
+--------------------------------------------------------------------------------
+** Docking run number 10 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 0
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :      0
+  Number of errors                         :     91
+
+
+Doing GA, no. of population(s) 1 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+         0      35.61       4.74      23.63       0.00      -8.13      -0.76
+       438      31.92       4.53      21.77       0.00      -8.13      -0.76
+Reordering...
+       900      24.23       7.37      13.51       0.00      -3.27      -0.76
+      1019      27.74       5.92      18.06       0.00      -5.15      -0.76
+Reordering...
+      1140      24.55       8.25      13.57       0.00      -3.47      -0.76
+      1603      22.86       0.82      17.20       0.00      -1.61      -0.76
+      1718      27.95       5.37      17.59       0.00      -1.61      -0.76
+--------------------------------------------------------------------------------
+Best docking solution after GA:
+      2000      27.95       5.37      17.59       0.00      -1.61      -0.76
+
+#ops:       2000 #mutates:    977 #cross:     1023 #dups:       294 
+#niche:      959 #errors:     117 
+--------------------------------------------------------------------------------
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1126, best score  30.26
+
+Ligand is stored in gold_soln_ligand_prepared_m1_10.mol2
+
+
+--------------------------------------------------------------------------------
+--- GoldScore breakdown of terms                                             ---
+--------------------------------------------------------------------------------
+Fitness = S(hb_ext) + 1.3750*S(vdw_ext) + S(hb_int) + 1.0000*S(int)
+S(int)  = S(vdw_int) + S(tors)
+
+Internal terms are relative to best energy found (intcor).
+
+--------------------------------------------------------------------------------
+
+
+     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor
+     30.26       6.00      18.75       0.00      -1.52      -0.76
+
+--------------------------------------------------------------------------------
+--- GoldScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+  Ligand acceptor   11 Protein hydrogen 23770 donor 23719 bond energy  6.00 wt 1.00
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Rescoring solution                                                       ---
+--------------------------------------------------------------------------------
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     24.11     -23.54       1.00       0.00       0.00       1.28       0.58
+
+Doing AMOEBA simplex on best individual
+Done simplexing #iterations 1391, best score  27.62
+
+     Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)
+     27.62     -26.95       1.00       0.00       0.00       1.90       0.22
+
+--------------------------------------------------------------------------------
+--- CHEMPLP breakdown of terms                                               ---
+--------------------------------------------------------------------------------
+CHEMPLP = - ( 1.0000*S(PLP) + -3.0000*S(hbond) + -6.0000*S(metal) + -3.0000*S(cho) )
+
+Score = CHEMPLP - 1.0000*DE(clash) - 2.0000*DE(tors)
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- PLP analysis of protein-ligand interactions                              ---
+--------------------------------------------------------------------------------
+hydrogen bonding        :      -1.33
+metal                   :       0.00
+buried (polar-nonpolar) :      -5.82
+nonpolar                :     -21.26
+repulsive               :       0.25
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- ChemScore analysis of protein-ligand interactions                        ---
+--------------------------------------------------------------------------------
+
+* Hydrogen bonds                                                                
+Protein donor 23719 hydrogen 23770 Ligand acceptor   11 bond energy  1.00 wt 1.00
+
+
+* CH..O interactions                                                            
+  CH group selection                       : activated ring CH (adjacent to hetatom)
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Intra-ligand clashes                                                     ---
+--------------------------------------------------------------------------------
+
+Ligand
+  6 (C6   ) -   3 (C3   ):   1.90 (dist   2.70)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Chromosome decoded                                                       ---
+--------------------------------------------------------------------------------
+Ligand Torsions
+[   6    2    1    3]  -15.58
+[  12    5    1    2]  172.82
+Protein Torsions
+[1594 1544 1543 1542]  -23.60 
+[4304 4284 4283 4280]  140.33 
+[4344 4323 4324 4325]  -67.12 
+[4348 4328 4327 4324]  114.00 
+[6708 6672 6671 6669]   58.82 
+[23762 23712 23713 23714]  -48.46 
+[23800 23787 23788 23789]  -53.83 
+[6926 6895 6896 6897]  128.55 
+[4168 4129 4130 4131]  161.65 
+[4085 4052 4053 4054]  123.82 
+[1354 1313 1314 1315]  112.40 
+[1584 1536 1537 1538]   69.85 
+[23828 23815 23816 23817]   45.73 
+[1288 1260 1258 1255]   62.90 
+[25744 25716 25717 25718] -108.33 
+[27193 4055 4054 4053] -136.55 
+[27195 4282 4281 4280]   57.68 
+[27200 4326 4325 4324]   52.06 
+[27211 23656 23655 23654]  -11.34 
+[27214 23715 23714 23713] -118.05 
+[27218 6898 6897 6896]   67.54 
+[27220 25719 25718 25717]   53.60 
+[27226 1316 1315 1314]  162.17 
+[27230 23818 23817 23816]  161.98 
+[27232 1257 1256 1255]   78.61 
+Mapping
+Ligand acceptors to protein hydrogens (mapping then atom ids)
+  2  19 [ 11->23770]
+Ligand hydrogens to protein acceptors (mapping then atom ids)
+Ligand shape atoms to protein points (mapping then atom ids & coords)
+  2   914 [  6->(226.500   0.500  44.750)]
+  5   799 [ 13->(225.750   0.750  45.750)]
+Chromosome values
+Integers:
+  -1   18   -1   -1   -1   -1  913   -1   -1  798   -1   -1 
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Stats                                                  ---
+--------------------------------------------------------------------------------
+  Move attempts                            :  19143
+  Move failures                            :   2936
+  Failure rate                             :   0.153
+
+--------------------------------------------------------------------------------
+
+Current Ranking  3  2  1  4  9  5  6  7  8 10
+
+--------------------------------------------------------------------------------
+
+* GA execution time :                                                           
+  total  0.4093 user  0.3906 sys  0.0186
+
+--------------------------------------------------------------------------------
+Fitness function evaluations: 19152
+
+--------------------------------------------------------------------------------
+--- Ranking analysis                                                         ---
+--------------------------------------------------------------------------------
+
+
+* Final ranked order of GA solutions:                                           
+   3  2  1  4  9  5  6  7  8 10 
+
+  _______________________________
+  RMSD Matrix of RANKED solutions
+
+        2    3    4    5    6    7    8    9   10  
+
+   1 :  2.8  1.5  2.8  4.3  4.3  2.4  2.4  2.7  4.0
+   2 :       2.6  0.3  4.4  4.3  2.6  2.6  2.1  2.0
+   3 :            2.6  4.4  4.4  2.1  2.0  2.9  3.6
+   4 :                 4.5  4.3  2.6  2.6  2.0  2.0
+   5 :                      0.9  4.2  4.2  4.1  4.9
+   6 :                           4.4  4.5  4.1  4.7
+   7 :                                0.4  2.6  3.4
+   8 :                                     2.7  3.5
+   9 :                                          3.3
+
+  Clustering method                        : complete linkage
+  Structure ids in cluster table           : rank nos.
+  Ordering of clusters and their members   : by rank (order if from rms_analysis)
+
+  Distance | Clusters
+   0.31    |  1 |  2  4 |  3 |  5 |  6 |  7 |  8 |  9 | 10 |
+   0.42    |  1 |  2  4 |  3 |  5 |  6 |  7  8 |  9 | 10 |
+   0.86    |  1 |  2  4 |  3 |  5  6 |  7  8 |  9 | 10 |
+   1.52    |  1  3 |  2  4 |  5  6 |  7  8 |  9 | 10 |
+   2.03    |  1  3 |  2  4 10 |  5  6 |  7  8 |  9 |
+   2.42    |  1  3  7  8 |  2  4 10 |  5  6 |  9 |
+   2.92    |  1  3  7  8  9 |  2  4 10 |  5  6 |
+   4.01    |  1  2  3  4  7  8  9 10 |  5  6 |
+   4.90    |  1  2  3  4  5  6  7  8  9 10 |
+  Finished Docking Ligand                  : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4d1n/ligand_prepared.mol2
+--------------------------------------------------------------------------------
+
+  Relative_Ligand_Energy (best encountered) :  -0.759
+  Relative_Ligand_Energy: fitness values have been corrected using this amount

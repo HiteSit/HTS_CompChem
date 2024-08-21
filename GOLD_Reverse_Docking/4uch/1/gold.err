@@ -1,0 +1,430 @@
+Warning message: 
+atom no  288 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no  326 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no  675 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 1275 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 1484 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 1858 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 2291 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 2564 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 2878 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 3273 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 3334 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 3420 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+amide nitrogen 3454 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 3459 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 3468 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+atom no 3704 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 3746 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 3890 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 4211 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 4330 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 4460 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 4491 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 4688 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 4774 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 5104 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 5297 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 5482 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 5520 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 5572 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 5892 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 6164 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 6226 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 6456 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 6490 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 6546 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 7072 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 7124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 7166 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 7356 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 7799 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 7982 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 8272 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 8506 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 9026 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 9456 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 9596 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 9934 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 10270 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 10378 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 10568 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 10830 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 11109 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 11143 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+amide nitrogen 11160 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is not planar
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11165 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11166 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11277 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11278 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+atom no 11433 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 11528 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 11878 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 11958 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 12383 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 12416 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 12550 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 12898 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13020 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13058 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13117 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13190 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13398 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13399 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13403 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13407 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13413 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13415 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13420 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 13424 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3459 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3460 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3461 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3462 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3468 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3469 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3470 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 3471 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11165 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11166 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11167 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11168 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11277 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11278 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11279 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+set_pdb_atom_types: can't deduce type of atom 11280 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/4uch/4uch_clean.pdb, replacing by Du
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 3459 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 3468 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11165 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11166 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11277 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_dummy_connected_atoms: Atom no 11278 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 3459 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 3468 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 11165 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 11166 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 11277 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_not_lp_connected_atoms: Atom no 11278 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 3459 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 3468 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 11165 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 11166 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 11277 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+
+Warning message: 
+find_connected_atoms: Atom no 11278 has more than 8 connections.
+GOLD cannot handle more than 8 connections per atom, so only the first 8 connections will be used.
+

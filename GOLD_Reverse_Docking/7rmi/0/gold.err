@@ -1,0 +1,15 @@
+Warning message: 
+set_pdb_bond_to_double: can't find bond between 8269 and 8270
+
+Warning message: 
+atom no  494 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmi/7rmi_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 1177 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmi/7rmi_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+
+Warning message: 
+atom no 8271 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/7rmi/7rmi_clean.pdb is deduced as N.pl3 but this may be
+in error (check bond types of connections)
+

@@ -1,0 +1,492 @@
+
+--------------------------------------------------------------------------------
+--- GOLD DOCKING RUN  (GOLD v2022.3.0)                                       ---
+--------------------------------------------------------------------------------
+
+GOLD is Genetic Optimisation for Ligand Docking.
+
+GOLD is the result of a collaborative project between Sheffield University,
+the CCDC and Glaxo Wellcome. GOLD is a proprietary product for which the
+copyright is held by the Cambridge Crystallographic Data Centre (CCDC)
+
+Please forward any comments, bugs, or queries to CCDC Software Support:
+
+  Cambridge Crystallographic Data Centre
+  12 Union Road
+  Cambridge CB2 1EZ
+  tel: (44) (1223) 336022
+  email: support@ccdc.cam.ac.uk
+
+--------------------------------------------------------------------------------
+
+  User                                     : hitesit
+  Invocation Time                          : Sun Apr 16 22:50:54 2023
+
+
+--------------------------------------------------------------------------------
+--- Parameter setting overview (user-defined or automatic)                   ---
+--------------------------------------------------------------------------------
+  maxops                          automatic setting
+  popsiz                          automatic setting
+  select_pressure                 automatic setting
+  n_islands                       automatic setting
+  niche_siz                       automatic setting
+  pt_crosswt                      automatic setting
+  allele_mutatewt                 automatic setting
+  migratewt                       automatic setting
+  start_vdw_linear_cutoff         defined by user
+  initial_virtual_pt_match_max    defined by user
+
+--------------------------------------------------------------------------------
+--- ChemScore parameters                                                     ---
+--------------------------------------------------------------------------------
+
+* ChemScore coefficients                                                        
+  ZERO_COEFFICIENT                         :  -5.480
+  HBOND_COEFFICIENT                        :  -3.000
+  INTERNAL_HBOND_COEFFICIENT               :  -3.340
+  METAL_COEFFICIENT                        :  -6.000
+  LIPO_COEFFICIENT                         :  -0.117
+  ROT_COEFFICIENT                          :   2.560
+  INTRA_COEFFICIENT                        :   1.000
+  LINK_BEND_COEFFICIENT                    :   0.250
+  PROTEIN_ENERGY_COEFFICIENT               :   1.000
+  CHARGED_HBOND_SCALING                    :   2.000
+  CHARGED_METAL_SCALING                    :   2.000
+
+* Hydrogen-bond term                                                            
+  HBOND_FUNCTION                           : CHEMSCORE_DOCKING
+  R_IDEAL                                  :   1.850
+  DELTA_R_IDEAL                            :   0.250
+  DELTA_R_MAX                              :   0.650
+  HBOND_R_SIGMA                            :   0.000
+  ALPHA_IDEAL                              : 180.000
+  DELTA_ALPHA_IDEAL                        :  30.000
+  DELTA_ALPHA_MAX                          :  80.000
+  HBOND_ALPHA_SIGMA                        :   0.000
+  BETA_IDEAL                               : 180.000
+  DELTA_BETA_IDEAL                         :  80.000
+  DELTA_BETA_MAX                           : 100.000
+  HBOND_BETA_SIGMA                         :   0.000
+USE_HBOND_STRENGTHS = OFF
+
+  CH...O term                              : SPECIAL
+  CHO_COEFFICIENT       (kJ/mol)           :  -3.000
+  CHO_CLASH_RADIUS      (Angstrom)         :   2.400
+  CHO_R_IDEAL           (Angstrom)         :   2.350
+  CHO_DELTA_R_IDEAL     (Angstrom)         :   0.250
+  CHO_DELTA_R_MAX       (Angstrom)         :   0.650
+  CHO_ALPHA_IDEAL       (degrees)          : 180.000
+  CHO_DELTA_ALPHA_IDEAL (degrees)          :  50.000
+  CHO_DELTA_ALPHA_MAX   (degrees)          : 100.000
+  CHO_BETA_IDEAL        (degrees)          : 180.000
+  CHO_DELTA_BETA_IDEAL  (degrees)          :  80.000
+  CHO_DELTA_BETA_MAX    (degrees)          : 100.000
+
+Sulfur...acceptor term: 
+
+
+* Metal term                                                                    
+  METAL_R1                                 :   2.600
+  METAL_R2                                 :   3.000
+  METAL_R_SIGMA                            :   0.100
+
+* Specific metal-coordination types                                             
+
+
+* Lipophilic term                                                               
+  MAKE_PLANAR_N_LIPO                       :      0
+  LIPO_R1                                  :   4.100
+  LIPO_R2                                  :   7.100
+  LIPO_R_SIGMA                             :   0.100
+
+
+* Clash term                                                                    
+  CLASH_FUNCTION                           : CHEMSCORE_DOCKING
+  CLASH_RADIUS_GENERAL                     :   3.100
+  CLASH_RADIUS_SULPHUR                     :   3.350
+  CLASH_RADIUS_HBOND                       :   1.600
+  CLASH_RADIUS_METAL                       :   1.380
+  CLASH_RADIUS_SIGMA                       :   0.000
+
+
+* Torsion term                                                                  
+  SP3_SP3_BOND         A =  0.18750 (kJ/mol); n = 3.0; f0 =  3.14159 (rad)
+  SP3_SP2_BOND         A =  0.09375 (kJ/mol); n = 6.0; f0 =  0.00000 (rad)
+  SP2_SP2_BOND         A =  0.18750 (kJ/mol); n = 2.0; f0 =  0.00000 (rad)
+  UNKNOWN_BOND         A =  0.00000 (kJ/mol); n = 0.0; f0 =  0.00000 (rad)
+  EXOCYCLIC_BOND       A =  0.50000 (kJ/mol); n = 1.0; f0 =  3.14159 (rad)
+USE_EXOCYCLIC_TORSION_TERM = 1
+
+
+* Scaling                                                                       
+  HBOND_SCALING                            :      0
+  HBOND_SCALING_SAMPLES                    :      1
+  HBOND_SCALING_END                        :  75.000
+  DELTA_R_MAX_START                        :   1.150
+  DELTA_ALPHA_MAX_START (deg)              : 110.000
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- CHEMPLP parameters                                                       ---
+--------------------------------------------------------------------------------
+
+  PLP_COEFFICIENT                          :   1.000
+  PLP_LIGAND_CLASH_COEFFICIENT             :   1.000
+  PLP_LIGAND_TORSION_COEFFICIENT           :   2.000
+  PLP_PROTEIN_ENERGY_COEFFICIENT           :   1.000
+  PLP_CONSTRAINT_COEFFICIENT               :   1.000
+  PLP_GRID_SPACING                         :   0.300
+
+  PLP_LIGAND_TORSION_FUNCTION              : CHEMSCORE
+  PLP_LIGAND_CLASH_FUNCTION                : PLP
+  PLP_HBOND_METAL_FUNCTION                 : CHEMSCORE
+
+  PLP_WATER_BARRIER                        :   3.000
+
+  HBOND_A                                  :   2.300
+  HBOND_B                                  :   2.600
+  HBOND_C                                  :   3.100
+  HBOND_D                                  :   3.400
+  HBOND_E                                  :  -1.000
+  HBOND_F                                  :  20.000
+
+  BURIED_A                                 :   3.400
+  BURIED_B                                 :   3.600
+  BURIED_C                                 :   4.500
+  BURIED_D                                 :   5.500
+  BURIED_E                                 :  -0.100
+  BURIED_F                                 :  20.000
+
+  METAL_A                                  :   1.400
+  METAL_B                                  :   2.200
+  METAL_C                                  :   2.600
+  METAL_D                                  :   2.800
+  METAL_E                                  :  -1.000
+  METAL_F                                  :  20.000
+
+  NONPOLAR_A                               :   3.400
+  NONPOLAR_B                               :   3.600
+  NONPOLAR_C                               :   4.500
+  NONPOLAR_D                               :   5.500
+  NONPOLAR_E                               :  -0.400
+  NONPOLAR_F                               :  20.000
+
+  REPULSIVE_A                              :   3.200
+  REPULSIVE_B                              :   5.000
+  REPULSIVE_C                              :   0.100
+  REPULSIVE_D                              :  20.000
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Parameter settings                                                       ---
+--------------------------------------------------------------------------------
+
+* Population settings                                                           
+  maxops                                   : auto   
+  popsiz                                   : auto   
+  select_pressure                          : auto   
+  n_islands                                : auto   
+  niche_siz                                : auto   
+
+* GA settings                                                                   
+  pt_crosswt                               : auto   
+  allele_mutatewt                          : auto   
+  migratewt                                : auto   
+
+* Search settings                                                               
+  start_vdw_linear_cutoff                  :   6.000
+  initial_virtual_pt_match_max             :   3.000
+
+* Cavity detection                                                              
+  Cavity detection algorithm               : Ligsite
+
+* Solvent Accessibility                                                         
+  Solvate all H bond donors and acceptors  : on
+
+* Ligand treatment                                                              
+  Internal ligand hydrogen bonds           : ignored
+  Flexible ligand ring corners             : fixed
+  Ligand carboxylic OH groups              : flip
+  Ligand amide bonds                       : fixed
+  Ligand pyramidal nitrogen groups         : fixed
+  Ligand bond to planar nitrogen groups    : allow 180 degrees flip
+  Ligand planar nitrogen bonds (Ring-NH-R) : can flip
+  Ligand planar nitrogen bonds (Ring-NRR') : can flip
+  Flatten amide and trigonal nitrogens     : yes
+  Torsional distributions                  : are used
+  Calculating torsional energy of ligand   : yes
+  Ligand energy                            : relative wrt best tors+vdw+hbond
+                                           : reported fitness is adjusted
+  Post-process ligand bonds                : yes
+
+* Protein treatment:                                                            
+  Protein carboxylic OH groups             : flip
+
+* Algorithm Settings (from parameter file):                                     
+  VDW potential (external)                 : 4-8       LJ potential (no. 1)
+  VDW potential (external)                 : 4-8 2-4 split potential (no. 2)
+  VDW potential (external)                 : 4-8 1-2 split potential (no. 3)
+  VDW potential (internal)                 : 6-12       LJ potential (no. 1)
+  VDW potential (internal)                 : 4-8       LJ potential (no. 2)
+  VDW potential (internal)                 : slot 3 not used
+  Weighting for distance matching          : squared
+  Weighting for angle    matching          : squared
+  Mapping, second pass results             : taking best three
+  Internal energy                          : on absolute scale
+  External energy weight                   :   1.375
+  Internal energy weight                   :   1.000
+  Length of H bond                         :   2.900
+  Angle coding                             : binary coded
+  Angle bit length                         : 8 bits
+  Allow duplicates in chromosome mappings  : yes
+  Parameter scaling                        : on
+  Simplex minimisation after every GA run  : yes
+  Infer hetatm types from residue names    : yes
+  Ligand relaxation                        : on
+    Maximum relax distance                 :   2.000
+    Maximum relax angle                    :  60.000
+  Ionisation dispersion term               : external
+
+* Geometric parameters for Fitness Function (from parameter file)               
+  Initial Virtual pt dist max              :   3.000
+  Final Virtual pt dist max                :   2.000
+  Virtual point distance min               :   0.500
+  Virtual point angle min                  :  60.000
+  Virtual point angle max                  : 160.000
+  Cone virtual point angle min             : 120.000
+  Cone virtual point angle max             : 160.000
+  Contact distance                         :  10.000
+  D/A vdw contact weighting                :   1.000
+  Minimum neighbour weighting              :   0.200
+  Mapping second pass distance             :   2.000
+
+* Lone pair parameters                                                          
+  Planar LP: minimum angle with plane      :  20.000
+  Planar LP: maximum angle with plane      :  90.000
+  Protein planar acceptors                 : need only one lp solvated
+  Solvated point distance                  :  -0.200
+
+* VDW parameters                                                                
+  Border round vdw grid                    :   4.000
+  VDW cutoff fraction                      :   1.500
+  VDW cutoff distance                      :  20.000
+  Number of bins in VDW lookup             :  10000
+
+* Specific metal-coordination types                                             
+
+* Other settings                                                                
+  Write statistics                         : off
+  Current parameters file                  :
+  /home/hitesit/CCDC/Discovery_2022/GOLD/gold/gold.params                       
+--------------------------------------------------------------------------------
+
+Processing protein 1: /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb 	DE(Protein): 0.00
+
+--------------------------------------------------------------------------------
+--- Loading protein                                                          ---
+--------------------------------------------------------------------------------
+  Protein file                             : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb
+==================================
+APPLYING GOLD TEMPLATES TO PROTEIN
+==================================
+
+No templates identified from 
+
+==================================
+# WARNING: amide nitrogen 374 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: atom no  386 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom  390 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as an acidic nitrogen
+# WARNING: amide nitrogen 674 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: amide nitrogen 1220 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: amide nitrogen 1505 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: amide nitrogen 2507 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: amide nitrogen 2700 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: amide nitrogen 2871 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: atom 3119 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as a singly charged oxygen
+# WARNING: amide nitrogen 5117 in molecule /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is not planar
+# WARNING: atom 5320 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as a singly charged oxygen
+# WARNING: set_pdb_atom_types: can't deduce type of atom  379 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  380 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  381 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  382 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  679 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  680 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  681 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  682 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  683 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom  684 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1225 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1226 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1227 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1228 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1229 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1230 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1510 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1511 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1512 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1513 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1514 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 1515 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2029 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2030 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2037 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2038 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2039 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2040 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2041 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2042 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2044 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2512 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2513 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2514 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2515 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2516 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2517 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2518 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2519 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2705 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2706 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2707 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2708 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2709 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2710 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2711 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2712 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2876 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2877 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2878 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2879 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2880 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 2881 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5057 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5058 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5065 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5066 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5067 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5068 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5069 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5070 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5122 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5123 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: set_pdb_atom_types: can't deduce type of atom 5125 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb, replacing by Du
+# WARNING: atom 3119 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 5320 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/3ovv_clean.pdb is deduced as a singly charged oxygen
+  N.plc donors                             : 
+  arg:  493 arg:  495 arg:  496 arg:  657 arg:  659 arg:  660 
+  arg: 1320 arg: 1322 arg: 1323 arg: 1988 arg: 1990 
+  arg: 1991 arg: 2012 arg: 2014 arg: 2015 arg: 2080 
+  arg: 2082 arg: 2083 arg: 2191 arg: 2193 arg: 2194 
+  arg: 2568 arg: 2570 arg: 2571 arg: 2992 arg: 2994 
+  arg: 2995 arg: 3061 arg: 3063 arg: 3064 arg: 4263 
+  arg: 4265 arg: 4266 arg: 4439 arg: 4441 arg: 4442 
+  arg: 4890 arg: 4892 arg: 4893 arg: 5284 arg: 5286 
+  arg: 5287 
+
+  Acidic nitrogen acceptors                : 
+
+  390  
+
+--------------------------------------------------------------------------------
+--- Active site                                                              ---
+--------------------------------------------------------------------------------
+  Deriving cavity from ligand file         : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3ovv/cavity_B_BUD3001.mol2
+  Picking atoms within distance            :   8.000
+
+
+* Cavity atoms                                                                  
+  591   592   593   594   595   597   598   602   603   604   
+  605   606   607   608   609   610   611   612   613   617   
+  618   619   622   2622  2623  2624  2632  2633  2634  2635  
+  2636  2637  2656  2657  2658  2659  2660  2663  2664  2665  
+  2666  3179  3183  3184  5201  5202  5203  5211  5212  585   
+  586   587   589   590   596   599   600   601   614   615   
+  616   620   621   623   637   645   646   647   662   2900  
+  5199  5209  1890  2674  682   683   691   692   693   694   
+  932   941   944   945   1888  1889  2592  2629  2653  2654  
+  2655  2662  2667  2672  2673  2677  2680  2889  2898  2899  
+  2901  2904  2905  2621  2631  1928  2590  2591  2620  2628  
+  2630  2652  2661  2668  2671  2676  2678  2679  3177  3178  
+  3186  
+  Number of active atoms                   :    121
+  Calculated cavity radius                 :   8.744
+  Calculated cavity origin                 : -10.43  -3.45  16.92
+
+  Ligsite cavity detection, MIN_PSP        :      4
+
+* Buried lysines                                                                
+  Lysine 932 is fixed by an hbond (acceptor atno 1284 hbond angle 12.0)
+
+--------------------------------------------------------------------------------
+--- Fitting points summary                                                   ---
+--------------------------------------------------------------------------------
+  Protein donor atoms                      :     14
+  591  597  605  612  617  2624 3179 5203 623  932  
+  2667 2673 2652 643  
+
+  Protein acceptor atoms                   :     19
+  594  597  608  617  2659 2660 3179 5203 587  615  
+  646  2900 1890 2674 1889 2592 2655 2901 2591 
+
+  Hydrogens                                :  (n = 19)
+  603  602  609  618  622  2635 2636 2637 3186 5212 
+  637  943  944  945  2679 2677 2678 2661 647  
+
+  Lone pairs added to molecule             :     38
+  Numbering                                : from 5527 to 5564
+
+  Protein TRP residues                     : 
+  none found in active site
+
+  Protein rotatable bonds                  : 
+  [ 597  595] [ 617  616] [2624 2623] [3179 3177] 
+  [5203 5202] 
+
+
+--------------------------------------------------------------------------------
+--- Shape grid                                                               ---
+--------------------------------------------------------------------------------
+  Maximum length of gridpt list            :    150
+  Average list length                      :     74
+
+--------------------------------------------------------------------------------
+--- Receptor Density Scaling                                                 ---
+--------------------------------------------------------------------------------
+  Minimum Protein Density                  :      0
+  Maximum Protein Density                  :    130
+Receptor density scaling is OFF
+
+
+  Length of shape fitting list             :   5541
+
+--------------------------------------------------------------------------------
+--- Interaction Motif                                                        ---
+--------------------------------------------------------------------------------
+  Number of interactions                   :      0
+  Number of motifs                         :      0
+  Weight                                   :  50.000
+  Minimum Include Score                    : 0.000001
+  Ignore Zero Bits?                        :      0
+
+
+* Generating PLP maps for types                                                 
+  DONOR   ACCEPTOR   DONACC   NONPOLAR 
+
+--------------------------------------------------------------------------------
+
+* Protein initialisation time :                                                 
+  total  3.3799 user  1.9708 sys  1.4091
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Active Molecule Summary                                                  ---
+--------------------------------------------------------------------------------
+

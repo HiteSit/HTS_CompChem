@@ -1,0 +1,25 @@
+
+        source leaprc.protein.ff14SB
+        source leaprc.water.tip3p
+        source leaprc.gaff
+        loadamberparams frcmod.ionsjc_tip3p
+
+        loadamberparams Crystal_amber.frcmod
+
+        lig = loadmol2 Crystal_amber.mol2
+        prot = loadpdb 8gcy_H.pdb
+        sys = combine {lig prot}
+        set default PBRadii mbondi2
+
+        solvateBox sys TIP3PBOX 10
+        charge sys
+        savepdb sys Init_Wat.pdb
+        
+        addIonsRand sys Na+ 48
+        addIonsRand sys Cl- 50
+        savepdb sys Init_Ions.pdb
+        
+        saveamberparm sys system.prmtop system.inpcrd
+        quit
+
+        

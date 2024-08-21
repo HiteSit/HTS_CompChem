@@ -1,0 +1,14 @@
+Beginning ligand file '/mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/ligands_prep/example_1_prep.mol2'
+Starting at ligand 1 (byte position 0) in file '/mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/ligands_prep/example_1_prep.mol2'
+Finishing at final ligand in file '/mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/ligands_prep/example_1_prep.mol2'
+Completed docking of ligand 1 in ligand file '/mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/ligands_prep/example_1_prep.mol2' in 59.572364 seconds
+
+Finished GOLD batch job, exiting..
+
+
+--------------------------------------------------------------------------------
+
+* Total run time :                                                              
+  total 64.5817 user 63.8518 sys  0.7299
+
+--------------------------------------------------------------------------------

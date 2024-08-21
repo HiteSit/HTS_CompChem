@@ -1,0 +1,11 @@
+Input file for running PB and GB in serial
+&general
+   startframe=5, endframe=37, interval=10, keep_files=2,
+   strip_mask=":HOH,NA,CL",
+/
+&gb
+  igb=2, saltcon=0.100,
+/
+&pb
+  istrng=0.15, fillratio=4.0, radiopt=0
+/

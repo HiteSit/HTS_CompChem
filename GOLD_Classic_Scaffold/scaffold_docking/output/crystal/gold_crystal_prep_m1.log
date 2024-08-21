@@ -1,0 +1,284 @@
+
+--------------------------------------------------------------------------------
+--- Ligand                                                                   ---
+--------------------------------------------------------------------------------
+  Ligand loaded from file                  : /mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/ligands_prep/crystal_prep.mol2
+  Ligand name                              :  
+  "crystal                                                                  "
+
+--------------------------------------------------------------------------------
+  N.plc donors                             : 
+  none found
+
+  Acidic nitrogen acceptors                : 
+  none found
+  Sulfur acceptors                         :
+  none found
+
+
+  Donor atoms                              :      1
+  15  
+  Acceptor atoms                           :      6
+  1   6   11  14  28  29  
+
+  Hydrogens                                :  (n = 1)
+  38   
+
+  Lone pairs added to molecule             :      8
+  Numbering                                : from 53 to 60
+
+--------------------------------------------------------------------------------
+--- Postprocessing of typing                                                 ---
+--------------------------------------------------------------------------------
+  Fragment file                            : /home/hitesit/CCDC/Discovery_2022/GOLD/gold/rotatable_bond_override.mol2
+  acylurea fragment                        : no matches
+  thioacylthiourea fragment                : no matches
+  acylthiourea fragment                    : no matches
+  thioacylurea fragment                    : no matches
+  diarylamine fragment >C.ar-NH-C.ar<      : no matches
+  sec-amine (1) fragment                   : no matches
+  sec-amine (2) fragment                   : 1 matches
+  Ligand bond 15-12  set to 1
+  Ligand bond 15-17  set to 1
+  Ligand bond 15-38  set to 1
+  sec-amine (3) fragment                   : no matches
+  carboxylic ester                         : no matches
+
+* Rotatable bonds in /mnt/c/Users/ricca/D  :
+  [   1    2] [   4    6] [  12   15] [  15   17] 
+  [  17   18] [  22   24] 
+  No. of rotatable bonds                   :      6
+
+
+* Reading torsional distributions from file:
+  /home/hitesit/CCDC/Discovery_2022/GOLD/gold/gold.tordist
+  No. of bins in torsional distributions   :     36
+  Minimum size of largest peak             :      0
+  Removing high energy torsions            : on
+  Delta E set to                           :   2.500
+
+* Fragments found in /mnt/c/Users/ricca/D  :
+  atom   2: benzene
+  atom   4: benzene
+  atom   5: benzene
+  atom   7: benzene
+  atom   8: benzene
+  atom  10: benzene
+  atom  18: benzene
+  atom  20: benzene
+  atom  21: benzene
+  atom  22: benzene
+  atom  23: benzene
+  atom  25: benzene
+
+
+* Checking torsion distributions:                                               
+  Rotatable bond [ 5  2  1  3] matches torsion: ortho-substituted aromatic methoxy
+   C.ar ( 1H ) | C.ar ( C.ar ( 0H ) ) | O.3 | C.3 ( 3H ) 
+  Rotatable bond [ 7  4  6  9] matches torsion: ortho-substituted aromatic methoxy
+   C.ar ( 1H ) | C.ar ( C.ar ( 0H ) ) | O.3 | C.3 ( 3H ) 
+  No. of matched torsions                  :      2
+
+--------------------------------------------------------------------------------
+--- Shape fitting atoms selection (hydrophobic atoms)                        ---
+--------------------------------------------------------------------------------
+  Molecule                                 : /mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/ligands_prep/crystal_prep.mol2
+  Selection                                : carbons only
+  Atom numbers                             :  (n = 13)
+  3    5    7    9    16   17   19   20   21   23   
+  25   26   27   
+
+--------------------------------------------------------------------------------
+--- Diverse Solutions Setup                                                  ---
+--------------------------------------------------------------------------------
+  Cluster size                             :     10
+  RMSD                                     :   1.500
+  Refinement                               :      0
+
+
+--------------------------------------------------------------------------------
+--- ChemScore ligand setup summary                                           ---
+--------------------------------------------------------------------------------
+  ChemScore ligand acceptors               :      6
+  1 6 11 14 28 29 
+  ChemScore ligand donors                  :      1
+  15 ( 38  ) 
+  ChemScore ligand lipophilic atoms        :  (n = 20)
+  2    3    4    5    7    8    9    10   16   17   
+  18   19   20   21   22   23   24   25   26   27   
+  
+
+  ChemScore ligand rotatable bonds         :      6
+  1   (O1 ) - 2   (C2 ): SP3_SP2_BOND
+  4   (C4 ) - 6   (O6 ): SP3_SP2_BOND
+  12  (C12) - 15  (N15): SP2_SP2_BOND
+  15  (N15) - 17  (C17): SP3_SP2_BOND
+  17  (C17) - 18  (C18): SP3_SP2_BOND
+  22  (C22) - 24  (C24): SP2_SP2_BOND
+
+--------------------------------------------------------------------------------
+--- Automatic parameter setting                                              ---
+--------------------------------------------------------------------------------
+  Contribution base                        :   2500
+  Contribution per rotatable bond          :   6000
+  Contribution per df                      :   4000
+  Contribution per water                   :  10000
+  Ligand rotatable bonds                   :      6
+  Protein flexible side chain bonds        :      0
+  Total rotatable bonds                    :      6
+  Hydrophobic vol ratio (P/L)              :   0.884
+  Base multiplier (polar)                  :   1.400
+  Base multiplier (apolar)                 :   2.300
+  Base contribution                        : 7500.000
+  Fitting points                           :      7
+  Estimated maxops needed (optimal)        :  44000
+
+--------------------------------------------------------------------------------
+
+* Population settings                                                           
+  maxops                                   :  44000
+  popsiz                                   :    100
+  select_pressure                          :   1.100
+  n_islands                                :      4
+  niche_siz                                :      2
+
+* GA settings                                                                   
+  pt_crosswt                               :     95
+  allele_mutatewt                          :     95
+  migratewt                                :     10
+
+* Search settings                                                               
+  start_vdw_linear_cutoff                  :   6.000
+  initial_virtual_pt_match_max             :   3.000
+  Scaling of internal VDW energy           : log scale from  0.2 to    1
+                                             over 33000 ops
+  Sampling interval (operations)           :    440
+  Scaling of virtual pt maximum length     : linear scale from    3 to    2
+                                             over 33000 ops
+  Sampling interval (operations)           :   1320
+  Scaling of 4-8 potential cutoff          : log scale from    6 to 1.2e+02
+                                             over 33000 ops
+  Sampling interval (operations)           :   1320
+
+--------------------------------------------------------------------------------
+--- Constraints                                                              ---
+--------------------------------------------------------------------------------
+
+  Scaffold constraint                      : /mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/scaffold_docking/output/scaffold_example_2|example_2_prep|mol2|1|dock2.mol2
+  Scaffold constraint match weight         :   5.000
+  Scaffold structure file                  : initialised
+  Match used for constraint                : no. 1 of 1
+  Scaffold atom   1 matches onto ligand atom   2 (heavy ats only)
+  Scaffold atom   2 matches onto ligand atom   4 (heavy ats only)
+  Scaffold atom   3 matches onto ligand atom   5 (heavy ats only)
+  Scaffold atom   4 matches onto ligand atom   7 (heavy ats only)
+  Scaffold atom   5 matches onto ligand atom   8 (heavy ats only)
+  Scaffold atom   6 matches onto ligand atom  10 (heavy ats only)
+  Scaffold atom   7 matches onto ligand atom  11 (heavy ats only)
+  Scaffold atom   8 matches onto ligand atom  12 (heavy ats only)
+  Scaffold atom   9 matches onto ligand atom  13 (heavy ats only)
+  Scaffold atom  10 matches onto ligand atom  14 (heavy ats only)
+  Number of atoms used for scaffold tether :     10
+
+
+--------------------------------------------------------------------------------
+
+* Ligand initialisation time :                                                  
+  total  0.0804 user  0.0252 sys  0.0551
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+** Docking run number  1 **
+--------------------------------------------------------------------------------
+  Rank fitness base is 5000.00 ; increment is 11.2233
+
+* Initialising population(s) ...                                                
+Number of constraints mappings 0
+Number of constraints 1
+  Population no.                           :      1
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :     24
+
+Number of constraints mappings 0
+Number of constraints 1
+  Population no.                           :      2
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :     31
+
+Number of constraints mappings 0
+Number of constraints 1
+  Population no.                           :      3
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :     31
+
+Number of constraints mappings 0
+Number of constraints 1
+  Population no.                           :      4
+  Population size                          :    100
+  Number of duplicates                     :      0
+  Number of niche violations               :     34
+
+
+Doing GA, no. of population(s) 4 size 100 selection pressure 1.100000
+
+ Operation      Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)     S(con)      intcor
+         0      77.77       1.76      55.97       0.00      -4.76      -0.00      -8.19
+       408      78.45       1.85      56.40       0.00      -4.76      -0.00      -8.19
+      1124      78.44       1.86      56.40       0.00      -4.65      -0.00      -8.19
+Reordering...
+      1320      77.78       2.00      56.59       0.00      -9.52      -0.00      -8.19
+Reordering...
+      1760      77.74       1.85      55.93       0.00      -4.65      -0.00      -8.19
+      1791      78.92       1.84      57.57       0.00      -9.52      -0.00      -8.19
+      2271      79.91       2.00      58.20       0.00      -9.52      -0.00      -8.19
+      3780      79.56       2.00      57.68       0.00      -7.38      -0.00      -8.19
+Reordering...
+      3960      78.93       2.00      57.63       0.00      -9.52      -0.00      -8.19
+      4363      79.39       2.00      57.45       0.00      -6.61      -0.00      -8.19
+Reordering...
+      4400      78.88       2.00      57.63       0.00      -9.52      -0.00      -8.19
+      4583      78.90       2.00      57.67       0.00      -9.63      -0.00      -8.19
+      4728      80.13       2.00      58.37       0.00      -8.59      -0.00      -8.19
+      4900      80.15       2.00      58.76       0.00     -10.46      -0.00      -8.19
+      4910      80.59       1.59      59.11       0.00      -9.00      -0.00      -8.19
+      6006      80.29       1.72      58.87       0.00      -9.00      -0.00      -8.19
+      6726      80.15       1.84      58.99       0.00     -10.16      -0.00      -8.19
+      7122      80.56       2.00      58.99       0.00      -9.04      -0.00      -8.19
+      7450      80.67       1.95      59.10       0.00      -9.04      -0.00      -8.19
+      7738      80.66       1.99      59.11       0.00      -9.04      -0.00      -8.19
+Reordering...
+      7920      80.45       1.99      59.00       0.00      -9.04      -0.00      -8.19
+      8122      80.51       2.00      59.04       0.00      -9.04      -0.00      -8.19
+      9677      80.42       2.00      59.10       0.00      -9.04      -0.00      -8.19
+      9970      80.57       2.00      59.25       0.00      -9.04      -0.00      -8.19
+     10454      80.69       1.94      59.43       0.00      -9.04      -0.00      -8.19
+Reordering...
+     11440      80.37       1.93      59.34       0.00      -9.04      -0.00      -8.19
+     11902      80.17       1.93      59.22       0.00      -8.94      -0.00      -8.19
+     12030      80.23       1.87      59.34       0.00      -9.04      -0.00      -8.19
+     12130      80.37       1.99      59.35       0.00      -9.04      -0.00      -8.19
+     12773      80.35       1.98      59.12       0.00      -7.85      -0.00      -8.19
+     13973      80.09       1.99      59.00       0.00      -7.76      -0.00      -8.19
+     14536      80.06       1.87      59.46       0.00      -8.80      -0.00      -8.19
+Reordering...
+     16720      79.45       1.87      59.32       0.00      -8.80      -0.00      -8.19
+     17409      79.24       1.93      59.18       0.00      -8.80      -0.00      -8.19
+     17589      79.32       1.85      58.96       0.00      -7.79      -0.00      -8.19
+Reordering...
+     18480      78.85       1.68      59.08       0.00      -8.25      -0.00      -8.19
+     18564      78.93       1.67      59.13       0.00      -8.21      -0.00      -8.19
+     19097      78.85       1.92      58.80       0.00      -7.79      -0.00      -8.19
+     19500      78.84       1.81      58.88       0.00      -7.64      -0.00      -8.19
+     20343      78.55       1.78      58.89       0.00      -7.83      -0.00      -8.19
+     20375      78.56       1.78      58.89       0.00      -7.83      -0.00      -8.19
+     20396      78.57       1.81      58.79       0.00      -7.60      -0.00      -8.19
+     20416      78.63       1.74      58.92       0.00      -7.70      -0.00      -8.19
+     21174      78.29       1.59      59.00       0.00      -7.90      -0.00      -8.19
+
+
+Received interrupt [signal number 15]
+

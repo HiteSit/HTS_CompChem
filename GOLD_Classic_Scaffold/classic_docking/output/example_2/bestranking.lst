@@ -1,0 +1,8 @@
+# File containing a listing of the fitness of the top-ranked
+# individual for each ligand docked in GOLD.
+#
+# Format is:
+#
+#     Fitness  S(hb_ext) S(vdw_ext)  S(hb_int)    S(int)      intcor RMS(heavy)     time                               File name                Ligand name
+
+     64.40       1.31      49.21       0.00      -4.57      -7.16    5.270   42.555  '/mnt/c/Users/ricca/Desktop/Documents/1_Coding/1_Script_Github/Chem_Script_Repo/GOLD_Classic_Scaffold/classic_docking/output/example_2/gold_soln_example_2_prep_m1_2.mol2'                'example_2'

@@ -1,0 +1,1664 @@
+
+--------------------------------------------------------------------------------
+--- GOLD DOCKING RUN  (GOLD v2022.3.0)                                       ---
+--------------------------------------------------------------------------------
+
+GOLD is Genetic Optimisation for Ligand Docking.
+
+GOLD is the result of a collaborative project between Sheffield University,
+the CCDC and Glaxo Wellcome. GOLD is a proprietary product for which the
+copyright is held by the Cambridge Crystallographic Data Centre (CCDC)
+
+Please forward any comments, bugs, or queries to CCDC Software Support:
+
+  Cambridge Crystallographic Data Centre
+  12 Union Road
+  Cambridge CB2 1EZ
+  tel: (44) (1223) 336022
+  email: support@ccdc.cam.ac.uk
+
+--------------------------------------------------------------------------------
+
+  User                                     : hitesit
+  Invocation Time                          : Sun Apr 16 22:52:12 2023
+
+
+--------------------------------------------------------------------------------
+--- Parameter setting overview (user-defined or automatic)                   ---
+--------------------------------------------------------------------------------
+  maxops                          automatic setting
+  popsiz                          automatic setting
+  select_pressure                 automatic setting
+  n_islands                       automatic setting
+  niche_siz                       automatic setting
+  pt_crosswt                      automatic setting
+  allele_mutatewt                 automatic setting
+  migratewt                       automatic setting
+  start_vdw_linear_cutoff         defined by user
+  initial_virtual_pt_match_max    defined by user
+
+--------------------------------------------------------------------------------
+--- ChemScore parameters                                                     ---
+--------------------------------------------------------------------------------
+
+* ChemScore coefficients                                                        
+  ZERO_COEFFICIENT                         :  -5.480
+  HBOND_COEFFICIENT                        :  -3.000
+  INTERNAL_HBOND_COEFFICIENT               :  -3.340
+  METAL_COEFFICIENT                        :  -6.000
+  LIPO_COEFFICIENT                         :  -0.117
+  ROT_COEFFICIENT                          :   2.560
+  INTRA_COEFFICIENT                        :   1.000
+  LINK_BEND_COEFFICIENT                    :   0.250
+  PROTEIN_ENERGY_COEFFICIENT               :   1.000
+  CHARGED_HBOND_SCALING                    :   2.000
+  CHARGED_METAL_SCALING                    :   2.000
+
+* Hydrogen-bond term                                                            
+  HBOND_FUNCTION                           : CHEMSCORE_DOCKING
+  R_IDEAL                                  :   1.850
+  DELTA_R_IDEAL                            :   0.250
+  DELTA_R_MAX                              :   0.650
+  HBOND_R_SIGMA                            :   0.000
+  ALPHA_IDEAL                              : 180.000
+  DELTA_ALPHA_IDEAL                        :  30.000
+  DELTA_ALPHA_MAX                          :  80.000
+  HBOND_ALPHA_SIGMA                        :   0.000
+  BETA_IDEAL                               : 180.000
+  DELTA_BETA_IDEAL                         :  80.000
+  DELTA_BETA_MAX                           : 100.000
+  HBOND_BETA_SIGMA                         :   0.000
+USE_HBOND_STRENGTHS = OFF
+
+  CH...O term                              : SPECIAL
+  CHO_COEFFICIENT       (kJ/mol)           :  -3.000
+  CHO_CLASH_RADIUS      (Angstrom)         :   2.400
+  CHO_R_IDEAL           (Angstrom)         :   2.350
+  CHO_DELTA_R_IDEAL     (Angstrom)         :   0.250
+  CHO_DELTA_R_MAX       (Angstrom)         :   0.650
+  CHO_ALPHA_IDEAL       (degrees)          : 180.000
+  CHO_DELTA_ALPHA_IDEAL (degrees)          :  50.000
+  CHO_DELTA_ALPHA_MAX   (degrees)          : 100.000
+  CHO_BETA_IDEAL        (degrees)          : 180.000
+  CHO_DELTA_BETA_IDEAL  (degrees)          :  80.000
+  CHO_DELTA_BETA_MAX    (degrees)          : 100.000
+
+Sulfur...acceptor term: 
+
+
+* Metal term                                                                    
+  METAL_R1                                 :   2.600
+  METAL_R2                                 :   3.000
+  METAL_R_SIGMA                            :   0.100
+
+* Specific metal-coordination types                                             
+
+
+* Lipophilic term                                                               
+  MAKE_PLANAR_N_LIPO                       :      0
+  LIPO_R1                                  :   4.100
+  LIPO_R2                                  :   7.100
+  LIPO_R_SIGMA                             :   0.100
+
+
+* Clash term                                                                    
+  CLASH_FUNCTION                           : CHEMSCORE_DOCKING
+  CLASH_RADIUS_GENERAL                     :   3.100
+  CLASH_RADIUS_SULPHUR                     :   3.350
+  CLASH_RADIUS_HBOND                       :   1.600
+  CLASH_RADIUS_METAL                       :   1.380
+  CLASH_RADIUS_SIGMA                       :   0.000
+
+
+* Torsion term                                                                  
+  SP3_SP3_BOND         A =  0.18750 (kJ/mol); n = 3.0; f0 =  3.14159 (rad)
+  SP3_SP2_BOND         A =  0.09375 (kJ/mol); n = 6.0; f0 =  0.00000 (rad)
+  SP2_SP2_BOND         A =  0.18750 (kJ/mol); n = 2.0; f0 =  0.00000 (rad)
+  UNKNOWN_BOND         A =  0.00000 (kJ/mol); n = 0.0; f0 =  0.00000 (rad)
+  EXOCYCLIC_BOND       A =  0.50000 (kJ/mol); n = 1.0; f0 =  3.14159 (rad)
+USE_EXOCYCLIC_TORSION_TERM = 1
+
+
+* Scaling                                                                       
+  HBOND_SCALING                            :      0
+  HBOND_SCALING_SAMPLES                    :      1
+  HBOND_SCALING_END                        :  75.000
+  DELTA_R_MAX_START                        :   1.150
+  DELTA_ALPHA_MAX_START (deg)              : 110.000
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- CHEMPLP parameters                                                       ---
+--------------------------------------------------------------------------------
+
+  PLP_COEFFICIENT                          :   1.000
+  PLP_LIGAND_CLASH_COEFFICIENT             :   1.000
+  PLP_LIGAND_TORSION_COEFFICIENT           :   2.000
+  PLP_PROTEIN_ENERGY_COEFFICIENT           :   1.000
+  PLP_CONSTRAINT_COEFFICIENT               :   1.000
+  PLP_GRID_SPACING                         :   0.300
+
+  PLP_LIGAND_TORSION_FUNCTION              : CHEMSCORE
+  PLP_LIGAND_CLASH_FUNCTION                : PLP
+  PLP_HBOND_METAL_FUNCTION                 : CHEMSCORE
+
+  PLP_WATER_BARRIER                        :   3.000
+
+  HBOND_A                                  :   2.300
+  HBOND_B                                  :   2.600
+  HBOND_C                                  :   3.100
+  HBOND_D                                  :   3.400
+  HBOND_E                                  :  -1.000
+  HBOND_F                                  :  20.000
+
+  BURIED_A                                 :   3.400
+  BURIED_B                                 :   3.600
+  BURIED_C                                 :   4.500
+  BURIED_D                                 :   5.500
+  BURIED_E                                 :  -0.100
+  BURIED_F                                 :  20.000
+
+  METAL_A                                  :   1.400
+  METAL_B                                  :   2.200
+  METAL_C                                  :   2.600
+  METAL_D                                  :   2.800
+  METAL_E                                  :  -1.000
+  METAL_F                                  :  20.000
+
+  NONPOLAR_A                               :   3.400
+  NONPOLAR_B                               :   3.600
+  NONPOLAR_C                               :   4.500
+  NONPOLAR_D                               :   5.500
+  NONPOLAR_E                               :  -0.400
+  NONPOLAR_F                               :  20.000
+
+  REPULSIVE_A                              :   3.200
+  REPULSIVE_B                              :   5.000
+  REPULSIVE_C                              :   0.100
+  REPULSIVE_D                              :  20.000
+
+
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+--- Parameter settings                                                       ---
+--------------------------------------------------------------------------------
+
+* Population settings                                                           
+  maxops                                   : auto   
+  popsiz                                   : auto   
+  select_pressure                          : auto   
+  n_islands                                : auto   
+  niche_siz                                : auto   
+
+* GA settings                                                                   
+  pt_crosswt                               : auto   
+  allele_mutatewt                          : auto   
+  migratewt                                : auto   
+
+* Search settings                                                               
+  start_vdw_linear_cutoff                  :   6.000
+  initial_virtual_pt_match_max             :   3.000
+
+* Cavity detection                                                              
+  Cavity detection algorithm               : Ligsite
+
+* Solvent Accessibility                                                         
+  Solvate all H bond donors and acceptors  : on
+
+* Ligand treatment                                                              
+  Internal ligand hydrogen bonds           : ignored
+  Flexible ligand ring corners             : fixed
+  Ligand carboxylic OH groups              : flip
+  Ligand amide bonds                       : fixed
+  Ligand pyramidal nitrogen groups         : fixed
+  Ligand bond to planar nitrogen groups    : allow 180 degrees flip
+  Ligand planar nitrogen bonds (Ring-NH-R) : can flip
+  Ligand planar nitrogen bonds (Ring-NRR') : can flip
+  Flatten amide and trigonal nitrogens     : yes
+  Torsional distributions                  : are used
+  Calculating torsional energy of ligand   : yes
+  Ligand energy                            : relative wrt best tors+vdw+hbond
+                                           : reported fitness is adjusted
+  Post-process ligand bonds                : yes
+
+* Protein treatment:                                                            
+  Protein carboxylic OH groups             : flip
+
+* Algorithm Settings (from parameter file):                                     
+  VDW potential (external)                 : 4-8       LJ potential (no. 1)
+  VDW potential (external)                 : 4-8 2-4 split potential (no. 2)
+  VDW potential (external)                 : 4-8 1-2 split potential (no. 3)
+  VDW potential (internal)                 : 6-12       LJ potential (no. 1)
+  VDW potential (internal)                 : 4-8       LJ potential (no. 2)
+  VDW potential (internal)                 : slot 3 not used
+  Weighting for distance matching          : squared
+  Weighting for angle    matching          : squared
+  Mapping, second pass results             : taking best three
+  Internal energy                          : on absolute scale
+  External energy weight                   :   1.375
+  Internal energy weight                   :   1.000
+  Length of H bond                         :   2.900
+  Angle coding                             : binary coded
+  Angle bit length                         : 8 bits
+  Allow duplicates in chromosome mappings  : yes
+  Parameter scaling                        : on
+  Simplex minimisation after every GA run  : yes
+  Infer hetatm types from residue names    : yes
+  Ligand relaxation                        : on
+    Maximum relax distance                 :   2.000
+    Maximum relax angle                    :  60.000
+  Ionisation dispersion term               : external
+
+* Geometric parameters for Fitness Function (from parameter file)               
+  Initial Virtual pt dist max              :   3.000
+  Final Virtual pt dist max                :   2.000
+  Virtual point distance min               :   0.500
+  Virtual point angle min                  :  60.000
+  Virtual point angle max                  : 160.000
+  Cone virtual point angle min             : 120.000
+  Cone virtual point angle max             : 160.000
+  Contact distance                         :  10.000
+  D/A vdw contact weighting                :   1.000
+  Minimum neighbour weighting              :   0.200
+  Mapping second pass distance             :   2.000
+
+* Lone pair parameters                                                          
+  Planar LP: minimum angle with plane      :  20.000
+  Planar LP: maximum angle with plane      :  90.000
+  Protein planar acceptors                 : need only one lp solvated
+  Solvated point distance                  :  -0.200
+
+* VDW parameters                                                                
+  Border round vdw grid                    :   4.000
+  VDW cutoff fraction                      :   1.500
+  VDW cutoff distance                      :  20.000
+  Number of bins in VDW lookup             :  10000
+
+* Specific metal-coordination types                                             
+
+* Other settings                                                                
+  Write statistics                         : off
+  Current parameters file                  :
+  /home/hitesit/CCDC/Discovery_2022/GOLD/gold/gold.params                       
+--------------------------------------------------------------------------------
+
+Processing protein 1: /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb 	DE(Protein): 0.00
+
+--------------------------------------------------------------------------------
+--- Loading protein                                                          ---
+--------------------------------------------------------------------------------
+  Protein file                             : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb
+==================================
+APPLYING GOLD TEMPLATES TO PROTEIN
+==================================
+
+No templates identified from 
+
+==================================
+# WARNING: atom   61 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom   70 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  127 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  136 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  174 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  185 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  231 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  239 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  285 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  290 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  319 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  328 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  381 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  386 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  415 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  424 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  481 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  490 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  525 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  533 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  564 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  575 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  621 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  629 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  679 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  688 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  745 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  754 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  816 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no  826 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom  830 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no  840 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom  883 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  892 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  925 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  931 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  959 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  966 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom  999 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1004 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1033 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1040 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1041 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1042 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1049 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1050 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1083 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1089 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1090 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1091 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1097 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1098 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1131 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1164 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1169 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1199 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1206 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1208 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1209 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1216 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1218 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1248 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1256 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1305 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1313 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1349 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1350 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1351 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 1358 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 1359 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1395 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1406 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1453 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1462 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1500 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1511 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1569 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1577 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1627 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1636 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1691 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1698 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1734 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1742 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1787 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1791 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1811 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1818 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1850 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1854 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1873 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1879 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1911 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1922 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1964 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1968 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 1992 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2003 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2060 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2067 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2109 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2117 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2160 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2168 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2216 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2223 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2266 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2275 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2333 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 2340 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 2342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2343 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 2350 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 2352 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2383 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2392 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2449 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2458 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2492 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2499 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2531 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2535 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2556 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 2562 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 2563 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 2564 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 2570 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 2571 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 2600 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 2607 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 2609 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2610 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 2617 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 2619 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2653 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2665 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2709 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2714 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2742 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2750 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2794 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2803 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2859 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2867 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2916 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2924 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2973 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 2981 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3010 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3019 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3076 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3083 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3084 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3085 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3092 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3093 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3127 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3136 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3191 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3198 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3239 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3246 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3289 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3298 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3354 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3362 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3412 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3421 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3478 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3485 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3486 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3487 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3494 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3495 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3528 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3536 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3586 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3595 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3632 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3639 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3641 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3642 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3649 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3651 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3680 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3687 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3723 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3731 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3780 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3786 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3787 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3788 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 3794 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 3795 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3823 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3832 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3868 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3877 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3936 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 3947 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4005 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4013 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4062 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4070 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4120 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 4127 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 4128 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4129 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 4136 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 4137 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4167 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4172 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4199 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4206 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4248 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 4254 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 4255 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4256 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 4262 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 4263 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4293 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4304 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4349 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4356 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4395 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4406 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4452 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4460 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4508 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4515 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4558 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4567 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4623 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4631 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4681 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4690 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4728 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4739 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4783 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4789 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4821 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4832 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4879 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4888 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4944 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4952 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 4980 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 4986 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 4987 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4988 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 4994 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 4995 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 5020 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5026 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5055 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 5061 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 5062 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 5063 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 5069 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 5070 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 5097 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5105 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5158 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5170 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5217 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5225 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5267 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5274 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5316 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5324 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5368 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5377 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5416 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5428 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5474 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5481 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5522 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5529 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5561 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5565 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5582 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5586 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5608 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5617 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5652 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5660 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5706 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5717 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5761 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5767 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5798 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 5805 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 5807 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5808 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 5815 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 5817 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5847 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5855 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5907 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5918 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5979 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 5990 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6048 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6056 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6101 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6105 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6129 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6140 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6201 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6212 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6256 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6262 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6292 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6301 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6335 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6380 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 6387 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 6389 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6390 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 6397 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 6399 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6426 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6431 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6462 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6473 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6534 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6545 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6595 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6607 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6651 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6656 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6681 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6686 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6715 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 6722 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 6723 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 6724 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 6731 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 6732 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 6765 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6773 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6821 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6828 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6870 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6878 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6926 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6933 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6972 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 6983 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7030 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7039 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7078 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7090 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7137 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7145 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7196 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 7203 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 7205 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7206 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 7213 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 7215 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7243 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7249 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7278 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7286 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7335 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7343 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7371 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7379 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7428 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7436 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7489 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7501 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7551 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7562 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7620 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7628 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7656 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7664 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7714 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7723 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7778 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7785 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7822 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7831 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7866 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 7872 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 7873 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 7874 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 7880 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 7881 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 7908 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7916 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7965 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 7973 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8022 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8030 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8079 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8087 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8116 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 8123 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 8124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8125 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 8132 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 8133 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8167 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 8174 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 8175 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8176 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 8183 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 8184 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8213 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8217 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8242 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8254 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8301 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8309 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8359 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 8366 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 8367 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8368 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 8375 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 8376 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8408 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8415 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8456 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8463 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8499 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8507 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8538 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8549 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8591 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8595 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8619 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8630 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8673 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8678 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8707 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8716 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8775 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8786 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8843 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8850 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8893 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8902 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8954 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8958 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8982 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 8993 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9050 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9057 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9099 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 9109 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 9113 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 9123 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 9160 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 9168 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9171 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 9179 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9182 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 9225 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9233 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9280 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9286 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9311 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9315 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9335 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9377 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9384 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9421 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9430 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9469 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9481 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9528 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9536 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9582 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9587 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9614 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9621 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9658 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9667 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9702 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9710 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9759 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9767 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9816 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9824 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9871 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9877 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9907 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9916 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9968 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9972 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9997 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10009 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10056 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 10062 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 10063 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 10064 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 10070 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 10071 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 10099 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10108 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10161 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10166 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10193 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10200 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10242 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10250 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10284 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 10294 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 10298 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 10308 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 10356 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 10366 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 10370 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 10380 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 10419 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10424 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10452 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10460 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10505 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10509 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10529 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10536 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10578 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10586 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10635 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10643 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10696 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10708 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10756 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10765 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10800 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10808 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10848 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10853 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10878 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10883 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10907 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10911 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10936 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10948 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 10994 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11001 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11036 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11043 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11082 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11093 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11142 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11153 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11196 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11201 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11229 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11237 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11266 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 11273 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 11274 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11275 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 11282 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 11283 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11315 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11322 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11358 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11366 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11416 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 11423 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 11424 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11425 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 11432 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 11433 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11466 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11474 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11527 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11539 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11587 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11596 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11632 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11641 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11697 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11705 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11753 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11760 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11800 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11806 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11831 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11835 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11857 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11866 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11921 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11928 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11973 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 11984 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12045 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12056 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12101 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12108 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12142 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12148 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12179 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 12186 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 12188 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12189 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 12196 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 12198 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12231 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12242 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12286 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12292 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12319 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12325 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12354 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12362 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12390 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12398 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12448 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12457 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12513 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12521 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12549 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12557 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12606 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12614 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12666 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12677 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12735 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 12741 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 12742 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12743 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 12749 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 12750 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12777 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12785 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12834 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12842 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12892 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 12899 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 12900 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12901 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 12908 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 12909 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12941 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12948 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12990 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 12998 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13026 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13034 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13082 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13089 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13126 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13135 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13194 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13205 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13266 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13277 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13319 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13323 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13344 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13350 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13351 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13352 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13358 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13359 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13386 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13394 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13444 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13453 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13509 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13515 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13516 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13517 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13523 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13524 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13547 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13551 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13571 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13578 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13620 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13626 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13627 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13628 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13634 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13635 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13662 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13670 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13698 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13706 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13756 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13765 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13821 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13827 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13828 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13829 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13835 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13836 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13865 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13872 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13874 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13875 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13882 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 13884 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13915 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13924 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 13986 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 13996 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 14000 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 14010 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 14055 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14066 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14109 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14114 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14141 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14148 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14183 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14190 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14226 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14234 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14268 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 14278 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 14282 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 14292 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 14334 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14388 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14393 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14421 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14429 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14482 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14494 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14542 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 14549 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 14550 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 14551 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 14558 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 14559 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 14595 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14606 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14665 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14674 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14729 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14736 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14779 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14788 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14820 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14825 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14852 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14859 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14898 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14909 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14955 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 14963 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15011 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15018 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15055 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15064 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15162 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15201 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15218 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15243 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15261 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15284 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15311 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15335 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 15341 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 15342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15366 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15403 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15427 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15455 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15494 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15533 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15570 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15579 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15615 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15624 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15659 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15667 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15719 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15730 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15787 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15794 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15831 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15838 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15841 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15848 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15851 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15887 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15895 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15944 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 15950 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 15951 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15952 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom no 15958 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as N.pl3
+           but this may be in error (check bond types of connections)
+# WARNING: atom 15959 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15987 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 15996 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16032 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16041 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16095 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16101 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16126 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16130 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16152 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16161 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16218 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16227 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16265 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16276 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16320 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16326 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16356 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16365 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16404 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 16416 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as an acidic nitrogen
+# WARNING: atom 9160 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 9171 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 9182 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15831 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15841 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15851 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1041 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1050 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1090 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1098 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1350 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 1359 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 2563 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 2571 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3084 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3093 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3486 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3495 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3787 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 3795 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4128 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4137 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4255 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4263 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4987 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 4995 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 5062 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 5070 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 6723 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 6732 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 7873 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 7881 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8124 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8133 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8175 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8184 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8367 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 8376 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 10063 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 10071 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11274 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11283 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11424 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 11433 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12742 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12750 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12900 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 12909 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13351 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13359 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13516 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13524 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13627 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13635 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13828 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 13836 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 14550 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 14559 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15342 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15951 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+# WARNING: atom 15959 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/3mvj_clean.pdb is deduced as a singly charged oxygen
+  N.plc donors                             : 
+  arg: 1496 arg: 1498 arg: 1499 arg: 1507 arg: 1509 arg: 1510 
+  arg: 1518 arg: 1520 arg: 1521 arg: 1988 arg: 1990 
+  arg: 1991 arg: 1999 arg: 2001 arg: 2002 arg: 2010 
+  arg: 2012 arg: 2013 arg: 3932 arg: 3934 arg: 3935 
+  arg: 3943 arg: 3945 arg: 3946 arg: 3954 arg: 3956 
+  arg: 3957 arg: 5903 arg: 5905 arg: 5906 arg: 5914 
+  arg: 5916 arg: 5917 arg: 5925 arg: 5927 arg: 5928 
+  arg: 5975 arg: 5977 arg: 5978 arg: 5986 arg: 5988 
+  arg: 5989 arg: 5997 arg: 5999 arg: 6000 arg: 6125 
+  arg: 6127 arg: 6128 arg: 6136 arg: 6138 arg: 6139 
+  arg: 6147 arg: 6149 arg: 6150 arg: 6458 arg: 6460 
+  arg: 6461 arg: 6469 arg: 6471 arg: 6472 arg: 6480 
+  arg: 6482 arg: 6483 arg: 7547 arg: 7549 arg: 7550 
+  arg: 7558 arg: 7560 arg: 7561 arg: 7569 arg: 7571 
+  arg: 7572 arg: 8771 arg: 8773 arg: 8774 arg: 8782 
+  arg: 8784 arg: 8785 arg: 8793 arg: 8795 arg: 8796 
+  arg: 8978 arg: 8980 arg: 8981 arg: 8989 arg: 8991 
+  arg: 8992 arg: 9000 arg: 9002 arg: 9003 arg: 11969 
+  arg: 11971 arg: 11972 arg: 11980 arg: 11982 arg: 11983 
+  arg: 11991 arg: 11993 arg: 11994 arg: 12662 arg: 12664 
+  arg: 12665 arg: 12673 arg: 12675 arg: 12676 arg: 12684 
+  arg: 12686 arg: 12687 arg: 13190 arg: 13192 arg: 13193 
+  arg: 13201 arg: 13203 arg: 13204 arg: 13212 arg: 13214 
+  arg: 13215 arg: 14591 arg: 14593 arg: 14594 arg: 14602 
+  arg: 14604 arg: 14605 arg: 14613 arg: 14615 arg: 14616 
+  arg: 15715 arg: 15717 arg: 15718 arg: 15726 arg: 15728 
+  arg: 15729 arg: 15737 arg: 15739 arg: 15740 
+
+  Acidic nitrogen acceptors                : 
+
+  61   70   127  136  174  
+  185  231  239  285  290  
+  319  328  381  386  415  
+  424  481  490  525  533  
+  564  575  621  629  679  
+  688  745  754  816  830  
+  883  892  925  931  959  
+  966  999  1004 1033 1042 
+  1083 1091 1124 1131 1164 
+  1169 1199 1208 1209 1218 
+  1248 1256 1305 1313 1342 
+  1351 1395 1406 1453 1462 
+  1500 1511 1569 1577 1627 
+  1636 1691 1698 1734 1742 
+  1787 1791 1811 1818 1850 
+  1854 1873 1879 1911 1922 
+  1964 1968 1992 2003 2060 
+  2067 2109 2117 2160 2168 
+  2216 2223 2266 2275 2333 
+  2342 2343 2352 2383 2392 
+  2449 2458 2492 2499 2531 
+  2535 2556 2564 2600 2609 
+  2610 2619 2653 2665 2709 
+  2714 2742 2750 2794 2803 
+  2859 2867 2916 2924 2973 
+  2981 3010 3019 3076 3085 
+  3127 3136 3191 3198 3239 
+  3246 3289 3298 3354 3362 
+  3412 3421 3478 3487 3528 
+  3536 3586 3595 3632 3641 
+  3642 3651 3680 3687 3723 
+  3731 3780 3788 3823 3832 
+  3868 3877 3936 3947 4005 
+  4013 4062 4070 4120 4129 
+  4167 4172 4199 4206 4248 
+  4256 4293 4304 4349 4356 
+  4395 4406 4452 4460 4508 
+  4515 4558 4567 4623 4631 
+  4681 4690 4728 4739 4783 
+  4789 4821 4832 4879 4888 
+  4944 4952 4980 4988 5020 
+  5026 5055 5063 5097 5105 
+  5158 5170 5217 5225 5267 
+  5274 5316 5324 5368 5377 
+  5416 5428 5474 5481 5522 
+  5529 5561 5565 5582 5586 
+  5608 5617 5652 5660 5706 
+  5717 5761 5767 5798 5807 
+  5808 5817 5847 5855 5907 
+  5918 5979 5990 6048 6056 
+  6101 6105 6129 6140 6201 
+  6212 6256 6262 6292 6301 
+  6335 6342 6380 6389 6390 
+  6399 6426 6431 6462 6473 
+  6534 6545 6595 6607 6651 
+  6656 6681 6686 6715 6724 
+  6765 6773 6821 6828 6870 
+  6878 6926 6933 6972 6983 
+  7030 7039 7078 7090 7137 
+  7145 7196 7205 7206 7215 
+  7243 7249 7278 7286 7335 
+  7343 7371 7379 7428 7436 
+  7489 7501 7551 7562 7620 
+  7628 7656 7664 7714 7723 
+  7778 7785 7822 7831 7866 
+  7874 7908 7916 7965 7973 
+  8022 8030 8079 8087 8116 
+  8125 8167 8176 8213 8217 
+  8242 8254 8301 8309 8359 
+  8368 8408 8415 8456 8463 
+  8499 8507 8538 8549 8591 
+  8595 8619 8630 8673 8678 
+  8707 8716 8775 8786 8843 
+  8850 8893 8902 8954 8958 
+  8982 8993 9050 9057 9099 
+  9113 9168 9179 9225 9233 
+  9280 9286 9311 9315 9335 
+  9342 9377 9384 9421 9430 
+  9469 9481 9528 9536 9582 
+  9587 9614 9621 9658 9667 
+  9702 9710 9759 9767 9816 
+  9824 9871 9877 9907 9916 
+  9968 9972 9997 10009 10056 
+  10064 10099 10108 10161 10166 
+  10193 10200 10242 10250 10284 
+  10298 10356 10370 10419 10424 
+  10452 10460 10505 10509 10529 
+  10536 10578 10586 10635 10643 
+  10696 10708 10756 10765 10800 
+  10808 10848 10853 10878 10883 
+  10907 10911 10936 10948 10994 
+  11001 11036 11043 11082 11093 
+  11142 11153 11196 11201 11229 
+  11237 11266 11275 11315 11322 
+  11358 11366 11416 11425 11466 
+  11474 11527 11539 11587 11596 
+  11632 11641 11697 11705 11753 
+  11760 11800 11806 11831 11835 
+  11857 11866 11921 11928 11973 
+  11984 12045 12056 12101 12108 
+  12142 12148 12179 12188 12189 
+  12198 12231 12242 12286 12292 
+  12319 12325 12354 12362 12390 
+  12398 12448 12457 12513 12521 
+  12549 12557 12606 12614 12666 
+  12677 12735 12743 12777 12785 
+  12834 12842 12892 12901 12941 
+  12948 12990 12998 13026 13034 
+  13082 13089 13126 13135 13194 
+  13205 13266 13277 13319 13323 
+  13344 13352 13386 13394 13444 
+  13453 13509 13517 13547 13551 
+  13571 13578 13620 13628 13662 
+  13670 13698 13706 13756 13765 
+  13821 13829 13865 13874 13875 
+  13884 13915 13924 13986 14000 
+  14055 14066 14109 14114 14141 
+  14148 14183 14190 14226 14234 
+  14268 14282 14334 14342 14388 
+  14393 14421 14429 14482 14494 
+  14542 14551 14595 14606 14665 
+  14674 14729 14736 14779 14788 
+  14820 14825 14852 14859 14898 
+  14909 14955 14963 15011 15018 
+  15055 15064 15124 15162 15201 
+  15218 15243 15261 15284 15311 
+  15335 15366 15403 15427 15455 
+  15494 15533 15570 15579 15615 
+  15624 15659 15667 15719 15730 
+  15787 15794 15838 15848 15887 
+  15895 15944 15952 15987 15996 
+  16032 16041 16095 16101 16126 
+  16130 16152 16161 16218 16227 
+  16265 16276 16320 16326 16356 
+  16365 16404 16416 
+
+--------------------------------------------------------------------------------
+--- Active site                                                              ---
+--------------------------------------------------------------------------------
+  Deriving cavity from ligand file         : /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2
+  Picking atoms within distance            :   8.000
+# WARNING: atom   37 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 is type  C.ar but should be   C.2 (check_atom_types)
+# WARNING: can't deduce type of atom   81 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom   83 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom   84 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom  103 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom  105 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom  106 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom  114 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom  116 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: can't deduce type of atom  117 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 (check_atom_types)
+# WARNING: atom  154 in /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/3mvj/cavity_J_THR5.mol2 is type  C.ar but should be   C.2 (check_atom_types)
+
+
+* Cavity atoms                                                                  
+  9817  9819  9820  9821  9822  9823  9833  9834  9835  9836  
+  9837  9838  9839  9840  9841  9842  9914  9915  9930  9933  
+  9934  9935  9936  9937  11774 9818  10933 10934 10935 10983 
+  10984 11190 10929 10930 10931 10932 10981 10982 11139 11140 
+  11141 11188 11189 9816  9871  9875  9886  9912  9913  9926  
+  9929  9931  9832  9872  9873  9874  9883  9907  9908  9911  
+  9925  9927  9932  9761  9762  9765  9782  9876  9887  11769 
+  11771 10928 10978 10980 12129 12130 12132 10746 10901 10979 
+  11136 11137 11138 11187 10744 10876 10905 10906 10924 10925 
+  10985 10986 10990 11027 11186 10926 11135 10692 10694 10695 
+  10877 11064 11964 11965 11966 11971 12023 12024 12030 12031 
+  12036 12037 12094 12095 12098 12099 12100 12133 12135 10927 
+  10987 10989 11030 11031 11032 11123 11131 11134 11182 11184 
+  11631 11686 11687 12021 12027 11963 11967 11968 11970 12026 
+  12164 10875 10904 10922 6183  9780  10903 11383 9781  11365 
+  11377 11384 11553 11606 11758 11759 11773 11775 11363 11378 
+  11382 11531 11554 11556 11588 11591 11608 11770 6098  6099  
+  6100  6116  6117  6124  6125  6179  6184  6185  10874 10899 
+  10923 6097  6118  6122  6123  6177  6182  9760  9763  9776  
+  9777  10921 11534 5842  5899  5903  5906  5943  5948  5950  
+  5954  6115  6119  6178  6180  10900 10993 11028 11362 11376 
+  11536 11558 9249  9617  9704  9705  9759  9764  9766  9775  
+  9778  9779  9783  9884  9885  11530 11532 11772 5841  5878  
+  5880  5881  5896  5897  5898  5900  5902  5904  5944  5953  
+  6042  6043  11359 11361 11364 11375 11380 11537 5971  9232  
+  9245  9250  9784  9785  11528 11529 11533 11535 11552 11555 
+  11587 5968  5970  6040  6041  6087  11360 11538 11551 11605 
+  5901  5945  5947  5949  5969  6014  6015  6086  6089  9230  
+  9247  11317 11318 11319 11330 11331 11358 11374 11379 11381 
+  11416 11527 11557 11559 11757 11754 11593 11594 11595 11589 
+  11590 11592 11607 11800 11812 11813 11814 11755 11756 11768 
+  11185 11217 11227 11226 11228 11688 10992 11026 11132 11133 
+  11191 5905  5951  5952  11194 11435 11610 10988 10991 11024 
+  11025 9450  10753 10755 10790 11022 11023 11183 11216 9417  
+  9418  9420  9449  10752 10754 11029 11073 11074 11122 11192 
+  11193 5752  5883  10787 10791 5703  5754  9416  9419  9447  
+  10789 11513 5705  5844  5846  5882  5946  10750 10751 5701  
+  5750  11417 11418 11419 11434 11438 11439 11609 11632 11650 
+  11420 11421 11436 11422 11437 11441 11466 11468 11482 11654 
+  11469 11753 11767 11467 11713 11715 11633 11634 11651 11697 
+  11699 11801 11804 11815 11225 11254 11222 11255 11256 11221 
+  11253 11223 11224 11423 11195 11218 11219 11220 11257 11300 
+  11264 11301 11306 11307 11258 11349 11263 11265 11465 11512 
+  11514 7821  5704  9448  9400  9402  9445  11259 11260 11308 
+  11313 11314 11343 11346 11463 11507 11508 9374  9375  9399  
+  9403  11261 11262 11302 11303 11305 11309 11312 11344 11347 
+  11348 11414 11456 11457 11462 11504 11506 11510 9361  9370  
+  9371  9372  9376  9401  9404  9412  9413  9446  11310 11311 
+  11345 11450 11453 11458 11459 11464 11505 11509 11511 6031  
+  9333  9359  9398  11350 11396 11576 9329  9330  9331  9332  
+  9357  9360  9373  9502  11523 11526 11574 7764  7768  7770  
+  9328  9334  9358  9414  9457  9506  9508  9559  11525 5753  
+  11288 5702  11270 11271 11286 11287 5700  5751  7819  11272 
+  11289 11424 11440 5697  5698  5699  5747  5784  5942  7856  
+  11267 11268 11273 11274 11291 11334 11269 7857  7818  7820  
+  11290 15402 5606  5748  5749  7765  7808  7817  7853  7854  
+  7855  7711  7713  7852  5605  5607  5696  5755  5783  5785  
+  7813  7814  15452 15454 15483 15484 1807  1828  5641  7712  
+  7761  7762  7766  7769  7815  7816  15453 1860  7710  7767  
+  1796  1797  1804  1806  1809  1825  1826  1827  5603  5604  
+  5640  15400 15418 15450 15451 15481 15482 1729  1784  5638  
+  5642  5643  5695  5746  5756  5759  5760  5786  7773  7774  
+  7858  15399 15401 15415 15417 15449 1728  1783  1785  1786  
+  1805  1808  1830  1831  1846  5600  15361 15387 15388 15390 
+  15392 15395 15396 15397 15398 15448 15480 1795  1847  1859  
+  5599  5601  5639  7859  7865  7894  7895  7964  8011  8012  
+  15363 1710  1727  1753  1754  1810  1829  1848  1858  1886  
+  2015  2078  2079  2081  2082  7863  8498  1689  1708  1709  
+  1849  1867  1963  15447 15478 15479 1730  2057  2059  2076  
+  7860  7862  7864  7896  7897  7898  7956  8007  8009  8013  
+  8455  8490  8495  8496  8526  7709  7760  7763  7811  1885  
+  9362  1871  1872  1899  7618  7619  9309  9310  1868  7617  
+  7899  8666  9463  9465  9505  7776  7777  7810  9415  9462  
+  9467  9468  9510  7706  7707  7759  7771  7772  7775  7807  
+  7809  7812  9461  9464  9466  10565 10566 5884  7651  7705  
+  7708  7806  9458  9503  9509  10527 10564 10617 10623 10748 
+  10788 11069 10525 10786 11035 11070 5876  7650  7758  9507  
+  10576 10621 10622 1897  1898  1869  1909  1933  1958  1959  
+  8667  1907  1910  8615  8617  8618  8664  9307  9308  9322  
+  9323  9324  9356  9561  9564  1870  1900  1956  1972  1905  
+  1906  1908  1957  7616  7641  7643  8613  8616  8665  9298  
+  9300  7543  7613  7642  8614  9275  9276  9277  9278  9299  
+  9527  9563  1946  9220  3393  1901  1904  1945  3475  3476  
+  3477  3514  3516  8497  8588  8589  8606  8608  8612  8659  
+  8661  8662  8663  9279  9301  9219  9222  9223  9256  9258  
+  9259  9261  9274  9297  9525  9526  9560  9562  9565  9224  
+  9260  11524 11575 3349  3390  3398  3474  3515  3517  3672  
+  9205  9218  9221  9254  3629  3630  3671  9162  9203  9204  
+  9217  9253  9262  9255  9257  9524  11521 11522 9160  9252  
+  9521  9555  9556  9557  9558  9700  9731  9734  9735  9736  
+  9737  9800  9801  11520 11572 11573 9159  9696  9697  9698  
+  9739  9756  9798  3350  3351  3352  3353  3347  3348  3391  
+  3394  3395  3396  3397  3400  3459  3407  3460  3462  3406  
+  3458  9158  9161  9201  9202  3283  3346  3392  3403  1934  
+  3151  3329  3408  3409  3463  3404  3405  3410  3456  3461  
+  3464  3465  3411  3457  3466  3467  3468  
+  Number of active atoms                   :    957
+  Calculated cavity radius                 :  26.526
+  Calculated cavity origin                 :   4.49   8.44  19.81
+
+  Ligsite cavity detection, MIN_PSP        :      4
+  Donor 9915 is in a solvent exposed residue
+  Donor 11631 is in a solvent exposed residue
+  Donor 3411 is in a solvent exposed residue
+
+--------------------------------------------------------------------------------
+--- Fitting points summary                                                   ---
+--------------------------------------------------------------------------------
+  Protein donor atoms                      :     84
+  9915 10935 9816 9871 9907 9876 10924 10695 11971 11131 
+  11631 10903 6125 6097 6118 5903 5906 9759 5896 11587 
+  5968 6040 11538 11358 11416 11527 11800 11191 5905 11632 
+  11466 11753 11697 11221 11423 11257 11264 11414 9412 11458 
+  11350 11526 9328 9334 9457 11273 7713 5755 7813 15454 
+  1804 5695 5760 7858 1783 1846 15395 5599 1810 1867 
+  7864 8455 1872 9468 7705 9307 1900 3476 8608 9274 
+  3629 9217 3346 3403 3411 11962 12136 11071 11407 2053 
+  7900 10747 1960 9520 
+
+  Acceptor 11594 is in a solvent exposed residue
+  Acceptor 11595 is in a solvent exposed residue
+  Acceptor 11227 is in a solvent exposed residue
+  Acceptor 11228 is in a solvent exposed residue
+  11424 (single OCO2 atom)
+  11274 (single OCO2 atom)
+  9160 (single OCO2 atom)
+  Protein acceptor atoms                   :    105
+  9819 10935 9816 9871 9874 9907 9762 9876 10876 10906 
+  10990 10695 11965 12037 10927 11032 11134 6100 5842 5899 
+  9617 9705 9759 11530 6043 11361 5971 11587 11538 11318 
+  11358 11416 11527 11594 11595 11590 11800 11756 11227 11228 
+  11194 10755 9420 10754 11074 9419 10750 11419 11632 11466 
+  11469 11753 11697 11224 11265 7821 11260 11311 9331 9373 
+  11526 9334 11424 5698 11274 11269 7820 15402 5606 5607 
+  15454 1807 7816 1729 5760 7774 15401 1786 15398 7865 
+  1810 8498 1849 1963 8455 1872 7618 7619 9310 9415 
+  9468 7651 7708 10525 1870 7543 9277 9220 3477 8497 
+  3349 9160 9697 3406 3283 
+
+  Hydrogens                                :  (n = 101)
+  9935 9936 9937 10984 9832 9883 9925 9887 10985 10746 
+  12030 12031 11182 11686 11687 11688 10921 6185 6115 6177 
+  5950 5953 5954 9775 5942 11605 6014 6086 11559 11374 
+  11434 11551 11812 11216 5951 5952 11650 11482 11767 11713 
+  11253 11440 11441 11300 11306 11307 11456 11457 9445 11504 
+  11396 11576 9356 9362 9502 11290 11291 7768 7769 7770 
+  5783 7852 15484 1825 5746 5787 7894 1795 1858 15415 
+  5638 1829 1886 7898 7899 8490 1885 9510 7758 9322 
+  1933 3516 3517 8659 9297 3671 9252 3399 3456 3466 
+  3467 3468 12021 12164 11122 11450 2082 7956 10786 1972 
+  9555 
+
+  Lone pairs added to molecule             :    194
+  Numbering                                : from 16458 to 16648
+
+  Protein TRP residues                     : 
+  none found in active site
+
+  Protein rotatable bonds                  : 
+  [9915 9914] [10935 10934] [9816 9817] [9871 9872] 
+  [9907 9908] [9876 9875] [10695 10694] [11631 11630] 
+  [9759 9760] [11587 11588] [11538 11537] [11358 11359] 
+  [11416 11417] [11527 11528] [11800 11801] [11632 11633] 
+  [11466 11467] [11753 11754] [11697 11698] [11526 11525] 
+  [9334 9332] [7713 7712] [15454 15453] [5760 5759] 
+  [1810 1808] [8455 8453] [1872 1871] [9468 9467] 
+  [3411 3410] [9819 9818] [9874 9873] [9762 9761] 
+                         [9617 9616] [9705 9704] [11530 11529] [11361 11360] 
+                         [11318 11317] [11590 11589] [11756 11755] [11419 11418] 
+                         [11469 11468] [11269 11268] 
+
+
+--------------------------------------------------------------------------------
+--- Shape grid                                                               ---
+--------------------------------------------------------------------------------
+  Maximum length of gridpt list            :    131
+  Average list length                      :     56
+
+--------------------------------------------------------------------------------
+--- Receptor Density Scaling                                                 ---
+--------------------------------------------------------------------------------
+  Minimum Protein Density                  :      0
+  Maximum Protein Density                  :    133
+Receptor density scaling is OFF
+
+
+  Length of shape fitting list             :  41253
+
+--------------------------------------------------------------------------------
+--- Interaction Motif                                                        ---
+--------------------------------------------------------------------------------
+  Number of interactions                   :      0
+  Number of motifs                         :      0
+  Weight                                   :  50.000
+  Minimum Include Score                    : 0.000001
+  Ignore Zero Bits?                        :      0
+
+
+* Generating PLP maps for types                                                 
+  DONOR   ACCEPTOR   DONACC   NONPOLAR 
+
+--------------------------------------------------------------------------------
+
+* Protein initialisation time :                                                 
+  total 47.3729 user 46.0942 sys  1.2787
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+--- Active Molecule Summary                                                  ---
+--------------------------------------------------------------------------------
+

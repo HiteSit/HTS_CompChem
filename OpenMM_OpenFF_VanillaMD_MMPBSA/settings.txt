@@ -1,0 +1,31 @@
+# Run settings
+delta_pico = 0.002
+
+system_settings = {
+    "receptor_path": "./LAC3.pdb",
+    "ligand_path": "F2_prep.sdf",
+    "delta_pico": delta_pico,
+    "rerun": False,
+    "gpu_id": "0"
+}
+
+nvt_settings = {
+    "steps": int(2 // delta_pico),      
+    "dcd_save":int(50 // delta_pico),
+    "log_save":int(1 // delta_pico),
+    "temps_list_simulating":[50, 100, 150, 200, 250, 300, 301]
+}
+
+npt_settings = {
+    "steps": int(2 // delta_pico),      
+    "dcd_save": int(50 // delta_pico),
+    "log_save": int(1 // delta_pico),
+    "rests_list_decreasing":[1000000000, 100000, 1000, 100, 10, 1],
+    "atoms_to_restraints":{"CA"}
+}
+
+md_settings = {
+    "steps": int(2000 // delta_pico),     
+    "dcd_save":int(1 // delta_pico),
+    "log_save":int(5 // delta_pico)
+}

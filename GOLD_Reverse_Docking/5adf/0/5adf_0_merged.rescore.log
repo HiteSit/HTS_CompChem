@@ -1,0 +1,13 @@
+Molecule file: /mnt/c/Users/ricca/Desktop/Documents/Rimoli/Reverse_Docking_Explore_V4/5adf/0/5adf_0_merged.rescore.log
+
+Status Simplex RMSd      Score     S(PLP)   S(hbond)     S(cho)   S(metal)  DE(clash)   DE(tors)     intcor   Ligand identifier
+Ok     1       0.67      32.70     -30.07       1.34       0.00       0.00       0.00       0.70       ----   CT1002167954|ligand_prepared|mol2|1|dock1
+Ok     1       0.54      49.80     -44.81       0.59       0.00       1.00       1.85       0.46       ----   CT1002167954|ligand_prepared|mol2|1|dock2
+Ok     1       0.60      50.63     -46.13       0.01       0.00       1.00       0.00       0.76       ----   CT1002167954|ligand_prepared|mol2|1|dock3
+Ok     1       0.67      33.24     -31.37       1.14       0.00       0.00       0.00       0.78       ----   CT1002167954|ligand_prepared|mol2|1|dock4
+Ok     1       0.61      17.14     -16.16       0.99       0.00       0.00       1.25       0.38       ----   CT1002167954|ligand_prepared|mol2|1|dock5
+Ok     1       0.55      32.93     -34.45       0.00       0.00       0.00       1.45       0.03       ----   CT1002167954|ligand_prepared|mol2|1|dock6
+Ok     1       0.55      28.19     -25.33       1.72       0.00       0.00       1.76       0.26       ----   CT1002167954|ligand_prepared|mol2|1|dock7
+Ok     1       1.10      28.31     -25.71       1.68       0.00       0.00       1.93       0.26       ----   CT1002167954|ligand_prepared|mol2|1|dock8
+Ok     1       0.60      22.95     -19.72       2.00       0.00       0.00       2.07       0.35       ----   CT1002167954|ligand_prepared|mol2|1|dock9
+Ok     1       0.45      15.83     -15.07       1.00       0.00       0.00       0.00       1.12       ----   CT1002167954|ligand_prepared|mol2|1|dock10
